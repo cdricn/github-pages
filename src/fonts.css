@@ -1,0 +1,33 @@
+@font-face{
+    font-family: "Cocogoose";
+    src:local("Cocogoose-Pro-Regular-trial"),
+    url('./assets/fonts/Cocogoose/Cocogoose-Pro-Regular-trial.ttf') 
+}
+
+@font-face{
+    font-family: "CocogooseLight";
+    src:local("Cocogoose-Pro-Semilight-trial"),
+    url('./assets/fonts/Cocogoose/Cocogoose-Pro-Semilight-trial.ttf') 
+}
+
+@font-face{
+    font-family: "CocogooseUltraLight";
+    src:local("Cocogoose-Pro-Ultralight-trial"),
+    url('./assets/fonts/Cocogoose/Cocogoose-Pro-Ultralight-trial.ttf') 
+}
+
+@font-face{
+    font-family: "LemonMilk";
+    src:local("LEMONMILK-Regular"),
+    url('./assets/fonts/Lemonmilk/LEMONMILK-Regular.otf') 
+}
+
+@font-face{
+    font-family: "LemonMilkMedium";
+    src:local("LEMONMILK-Medium"),
+    url('./assets/fonts/Lemonmilk/LEMONMILK-Medium.otf') 
+}
+
+
+
+
