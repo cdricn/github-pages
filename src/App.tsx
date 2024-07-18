@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='main-container'>
         <div className='header'>
-          CDRICN
+          HEADER
         </div>
         <div className='itemview'>
           <Items />
