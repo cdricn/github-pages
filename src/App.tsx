@@ -10,7 +10,7 @@ function App() {
         <div className='header'>
           CDRICN
         </div>
-        <div className='content-container'>
+        <div className='itemview'>
           <Items />
         </div>
       </div>

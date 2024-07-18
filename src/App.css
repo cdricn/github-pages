@@ -6,12 +6,13 @@
 }
 
 .header {
+  color: white;
   padding-top: 3%;
   font-family: 'CocogooseLight';
   font-size: 3vw;
 }
 
-.content-container {
+.itemview {
   width: 100%;
 }
 
