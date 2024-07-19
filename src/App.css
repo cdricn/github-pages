@@ -1,19 +1,50 @@
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 1.2vw;
+}
+p {
+  font-size: 0.8vw;
+}
+img {
+  font-size: 1vh;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 5vh;
 }
 
-.header {
+.page-header {
   color: white;
-  padding-top: 3%;
+  padding-top: 6vh;
   font-family: 'CocogooseLight';
-  font-size: 3vw;
+  font-size: 6vh;
+}
+.gh-icon {
+  margin-left: 1vh;
+  display: inline-block;
+  width: 2.5vh;
 }
 
 .itemview {
   width: 100%;
+}
+
+.content {
+  margin: 0;
+  padding-left: 18%;
+  padding-right: 17%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1vmin;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .arrow-right {

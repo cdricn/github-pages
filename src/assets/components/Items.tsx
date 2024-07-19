@@ -1,41 +1,36 @@
 import './Items.css'
+import data from '../../../src/pagecontent.json'
 
 function Items() {
   return (
     <>
-    <div className='content'>
-      <div className='item-container'>
-        <div className='title-container'>
-          <div className='title-shadow'>LOGIN / SIGNUP UI</div>
-          <div className='title-overlay'>LOGIN / SIGNUP UI</div>
+      {data.pageContent.map((item, index) => (
+        <div key={index}>
+          <li className='item-container' >
+            <div className='title-container'>
+              <div className='title-shadow'>{item.title}</div>
+              <div className='title-overlay'>{item.title}</div>
+            </div>
+            <div className='content-container'>
+            <h1 className='content-header'>
+              {item.header}
+              <span>
+                {item.status}
+              </span>
+            </h1>
+            <p className='content-body'>
+              {item.body}
+              <span className='content-link'>
+                {item.link}
+              </span>
+            </p>
+            <div className="content-image">
+              {item.image}
+            </div>
+            </div>
+          </li>
         </div>
-        <div className='content-container'>
-          <div className='content-header'>LOGIN / SIGNUP UI FORM DESIGN</div>
-          <div className='content-body'>This is a description.
-            The Login / Signup UI is a design made for a forms UI
-            on a single webpage.
-            <div className='content-link'></div>
-          </div>
-          <div className="content-image"></div>
-        </div>
-      </div>
-      <div className='item-container'>
-        <div className='title-container'>
-          <div className='title-shadow'>THESIS</div>
-          <div className='title-overlay'>THESIS</div>
-        </div>
-        <div className='item-content'>
-        </div>
-      </div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-      <div className='item-container'></div>
-    </div>
+      ))}
     </>
   )
 }

@@ -1,0 +1,44 @@
+{
+  "pageContent": [
+    {
+      "title": "PIXIV Downloader",
+      "header": "PIXIV Downloader",
+      "status": "",
+      "body": "A scraping tool to download the artworks of a user or of your own.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "title": "Login / Signup UI",
+      "header": "Login / Signup UI Form Design",
+      "status": "",
+      "body": "A mockup design that combines Login and Signup in a single webpage using CSS and JavaScript for form transitions.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "title": "Thesis",
+      "header": "Thesis Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
+      "status": "",
+      "body": "Written as a requirement for university, this paper studies the usefulness and effectiveness of real-time object detection for garbage segregation.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "title": "Empty",
+      "header": "",
+      "status": "",
+      "body": "",
+      "link": "",
+      "image": ""
+    },
+    {
+      "title": "Empty",
+      "header": "",
+      "status": "",
+      "body": "",
+      "link": "",
+      "image": ""
+    }
+  ]
+}
