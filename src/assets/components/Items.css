@@ -1,6 +1,6 @@
 .item-container {
   background-color: rgb(224, 224, 224);
-  transform: skewX(-20deg);
+  transform: skewX(0deg);
   width: 11vw;
   height: 70vh;
   top: 10vh;
@@ -35,8 +35,9 @@
 }
 
 .title-container {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 50vh;
+  bottom: 0px;
   right: 0;
   text-overflow: clip;
 }
@@ -59,7 +60,9 @@
 }
 
 .content-container {
-  padding-top: 15vh;
+  position: relative;
+  height: 30%;
+  top: -5vh;
 }
 .content-header, .content-body {
   padding-left: 2vh;
@@ -68,4 +71,16 @@
   opacity: 0;
   transition: 0.05s;
 }
-
+.content-header{
+  text-align: left;
+}
+.content-status {
+  margin-left: 1vh;
+  font-size: 1.6vh;
+  color: rgb(88, 88, 88);
+}
+img {
+  display: inline;
+  width: 3.3vh;
+  height: 3.3vh;
+}

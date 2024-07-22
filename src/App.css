@@ -31,27 +31,44 @@ img {
 }
 
 .itemview {
-  width: 100%;
-}
-
-.content {
-  margin: 0;
-  padding-left: 18%;
-  padding-right: 17%;
+  width: 69%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1vmin;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
-.arrow-right {
-  border: solid white;
-  border-width: 0 3px 3px 0;
+.content {
+  margin-left: 13vh;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  gap: 1vmin;
+  overflow-y: hidden;
+  transform: skewX(-20deg);
+}
+
+.arrow-left, .arrow-right {
+  border: solid rgb(224, 224, 224);
+  border-width: 0 0.7vh 0.7vh 0;
   display: inline-block;
-  padding: 3px;
+  padding: 1vh;
+  transition: .2s;
+}
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.arrow-right {
+  margin-left: 7vh;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+.arrow-left:hover, .arrow-right:hover {
+  border: solid white;
+  border-width: 0 0.7vh 0.7vh 0;
+  display: inline-block;
+  padding: 1.5vh;
+  transition: .3s;
 }

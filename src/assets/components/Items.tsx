@@ -1,5 +1,14 @@
 import './Items.css'
+import linkImg from '../../assets/arrowdark.png'
 import data from '../../../src/pagecontent.json'
+
+function status(item:any){
+  if (item.body === ""){
+    return "";
+  }else{
+    return item.status === "done" ? "(Finished)" : "(In Progress)";
+  }
+}
 
 function Items() {
   return (
@@ -14,14 +23,16 @@ function Items() {
             <div className='content-container'>
             <h1 className='content-header'>
               {item.header}
-              <span>
-                {item.status}
+              <span className='content-status'>
+                {status(item)}
               </span>
             </h1>
             <p className='content-body'>
               {item.body}
               <span className='content-link'>
-                {item.link}
+                <a href={item.link} target="_blank">
+                  <img src={linkImg} alt="Link"></img>
+                </a>
               </span>
             </p>
             <div className="content-image">

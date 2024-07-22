@@ -22,9 +22,11 @@ function App() {
           </a>
         </div>
         <div className='itemview'>
-          <ul className='content'>
+          <div className='arrow-left'></div>
+          <ul id='scroll-container' className='content'>
             <Items />
           </ul>
+          <div className='arrow-right'></div>
         </div>
       </div>
     </>
