@@ -27,6 +27,7 @@ img {
 .gh-icon {
   margin-left: 1vh;
   display: inline-block;
+  height: 2.5vh;
   width: 2.5vh;
 }
 
@@ -42,10 +43,10 @@ img {
   margin-left: 13vh;
   display: flex;
   flex-direction: row;
-  align-items: left;
   justify-content: left;
   gap: 1vmin;
   overflow-y: hidden;
+  overflow-x: scroll;
   transform: skewX(-20deg);
 }
 
