@@ -2,7 +2,7 @@ import './App.css'
 import './fonts.css'
 import icon from './assets/githubicon.png'
 import Items from './assets/components/Items.tsx'
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
 function App() {
   const scrollableDivRef = useRef<HTMLDivElement>(null);
