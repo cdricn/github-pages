@@ -2,9 +2,7 @@
   background-color: rgb(224, 224, 224);
   transform: skewX(0deg);
   width: 11vw;
-  height: 70vh;
-  top: 10vh;
-  left: 5vw;
+  height: 100%;
   transition: 0.3s;
 }
 .item-container:hover {
@@ -17,7 +15,7 @@
   transition: 0.2s;
 }
 .item-container:hover .title-shadow {
-  padding-left: 0vh;
+  padding-left: 0%;
   opacity: 1;
   transition: 0.2s;
 }
@@ -28,16 +26,10 @@
   opacity: 1;
 }
 
-.title-overlay, .title-shadow,
-.content-header, .content-body {
-  color: rgb(17, 17, 17);
-  font-family: 'CocogooseLight';
-}
-
 .title-container {
   position: relative;
   top: 50vh;
-  bottom: 0px;
+  bottom: 0;
   right: 0;
   text-overflow: clip;
 }
@@ -61,7 +53,6 @@
 
 .content-container {
   position: relative;
-  height: 30%;
   top: -5vh;
 }
 .content-header, .content-body {
@@ -83,4 +74,72 @@ img {
   display: inline;
   width: 3.3vh;
   height: 3.3vh;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1000px) {
+  .item-container{
+    width: 100%;
+    height: 10vh;
+    z-index: 0;
+  }
+
+  .title-container {
+    top: 0vh;
+    bottom: 0;
+    text-overflow: clip;
+  }
+  .title-overlay, .title-shadow {
+    transition: 0.5s;
+    white-space: nowrap;
+    transform: rotate(0deg) translate(0,0);
+    -webkit-transform: rotate(0deg) translate(0,0);
+  }
+  .title-overlay {
+    position: relative;
+    padding-left: 6%;
+    bottom: 8vw;
+    font-size: 2.5vh;
+  }
+  .title-shadow {
+    padding-top: 7%;
+    padding-left: 7%;
+    font-size: 5vh;
+    opacity: 0.2;
+  }
+  .item-container:hover .title-shadow {
+    padding-left: 2%;
+  }
+
+  .item-container:hover {
+    width: 70vw;
+    height: 50vh;
+    background-color: white;
+  }
+  .item-container:hover .content-header{
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 4vw;
+  }
+  .item-container:hover .content-body {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    text-align: justify;
+    padding-top: 3%;
+    font-size: 3vw;
+  }
+  .content-status {
+    display: block;
+    margin-left: 0;
+    font-size: 1vh;
+  }
+  img {
+    display: inline;
+    width: 2.3vh;
+    height: 2.3vh;
+  }
 }

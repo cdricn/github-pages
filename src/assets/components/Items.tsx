@@ -38,16 +38,14 @@ function Items() {
   return (
     <>
       {data.pageContent.map((item, index) => (
-        <div key={index}>
-          <li className='item-container' >
-            <div className='title-container'>
-              <div className='title-shadow'>{item.title}</div>
-              <div className='title-overlay'>{item.title}</div>
-            </div>
-            <div className='content-container'>
-              {contentVisible(item)}
-            </div>
-          </li>
+        <div className='item-container' key={index}>
+          <div className='title-container'>
+            <div className='title-shadow'>{item.title}</div>
+            <div className='title-overlay'>{item.title}</div>
+          </div>
+          <div className='content-container'>
+            {contentVisible(item)}
+          </div>
         </div>
       ))}
     </>

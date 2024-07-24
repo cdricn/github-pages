@@ -1,4 +1,4 @@
-ul {
+ul, li {
   list-style-type: none;
 }
 h1 {
@@ -21,7 +21,6 @@ img {
 .page-header {
   color: white;
   padding-top: 6vh;
-  font-family: 'CocogooseLight';
   font-size: 6vh;
 }
 .gh-icon {
@@ -44,10 +43,14 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  height: 70vh;
   gap: 1vmin;
   overflow-y: hidden;
   overflow-x: scroll;
   transform: skewX(-20deg);
+}
+.content::-webkit-scrollbar-button {
+  
 }
 
 .arrow-left, .arrow-right {
@@ -72,4 +75,22 @@ img {
   display: inline-block;
   padding: 1.5vh;
   transition: .3s;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 1vmin;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: skewX(0deg);
+  }
+
+  .arrow-left, .arrow-right {
+    display: none;
+    visibility: hidden;
+  }
 }
