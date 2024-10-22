@@ -28,6 +28,11 @@
     url('./assets/fonts/Lemonmilk/LEMONMILK-Medium.otf') 
 }
 
+@font-face{
+    font-family: "Inter";
+    src:local("Inter-VariableFont"),
+    url('./assets/fonts/Inter/Inter-VariableFont.ttf') 
+}
 
 
 
