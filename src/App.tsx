@@ -16,11 +16,21 @@ function App() {
         </span>
       </div>
       <div className='menu-container'>
-        <h2>Projects</h2>
-        <h2>About</h2>
-        <h2>Top</h2>
+        <div className='menu'>
+          <h2>Projects</h2>
+          <h2>About</h2>
+          <h2>Top</h2>
+        </div>
       </div>
       <div className='items-container'>
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
         <Item />
         <Item />
         <Item />

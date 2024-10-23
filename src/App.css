@@ -17,29 +17,36 @@ h1, h2 {
 }
 
 .menu-container {
-  padding-top: 2rem;
   position: sticky;
-  margin: auto;
-  display: flex;
-  gap: 10rem;
-  justify-content: start;
-  width: 75%;
+  top: 0;
+  background-color: var(--color-primary-a);
+  z-index: 1;
 }
 .menu-container::after {
   content: '';
-  margin: auto;
   position: absolute;
-  top: 90px;
-  left: -25px;
+  margin: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
   height: 1px;
-  width: calc(100% + 50px);
+  width: 80%;
   background-color: var(--color-divider-primary);
 }
 
-.menu-container > h2 {
+.menu {
+  margin: auto;
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  gap: 10rem;
+  top: -20px;
+  width: 72%;
+}
+.menu > h2 {
   font-size: var(--fs-h2);
 }
-.menu-container > :nth-child(3) {
+.menu > :nth-child(3) {
   margin-left: auto;
 }
 
@@ -47,7 +54,10 @@ h1, h2 {
   margin-top: 26px;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   width: 75%;
 }

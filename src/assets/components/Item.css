@@ -1,14 +1,13 @@
 .item-box {
   position: relative;
   height: 400px;
-  width: 320px;
+  min-width: 320px;
   background-color: white;
 }
 .item-number {
-  position: absolute;
+  position: relative;
   top: -120px;
   left: -70px;
-  overflow: hidden;
   color: var(--color-text-secondary);
   font-size: var(--fs-xxl);
 }
