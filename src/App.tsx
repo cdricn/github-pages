@@ -18,12 +18,12 @@ function App() {
       </div>
       <div className='menu-container'>
         <div className='menu'>
-          <h2>Projects</h2>
+          <h2 onClick={alert} >Projects</h2>
           <h2>About</h2>
           <h2>Top</h2>
         </div>
       </div>
-      <div id='component'>
+      <div id='display-component'>
         <Cards />
       </div>
     </>

@@ -21,3 +21,50 @@ p {
   font-family: var(--ff-body);
   font-size: var(--fs-small-b);
 }
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.header > h1 {
+  display: inline;
+}
+.header > span {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+}
+
+.menu-container {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-primary-a);
+  z-index: 1;
+}
+.menu-container::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 80%;
+  background-color: var(--color-divider-primary);
+}
+
+.menu {
+  margin: auto;
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  gap: 10rem;
+  top: -20px;
+  width: 72%;
+}
+.menu > :nth-child(3) {
+  margin-left: auto;
+}
+.menu > h2 {
+  cursor: pointer;
+}
