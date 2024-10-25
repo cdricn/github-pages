@@ -14,13 +14,21 @@
 
   --color-primary-a: #1A1919;
   --color-text-primary: #ffffff;
+  --color-text-primary-b: #1A1919;
   --color-text-secondary: #0000004b;
   --color-divider-primary: #ffffff;
 
   --fs-xxl: 250px;
-  --fs-l: 100px;
-  --fs-h1: 50px;
-  --fs-h2: 30px;
+  --fs-l-a: 100px;
+  --fs-l-b: 70px;
+  --fs-medium-a: 50px;
+  --fs-medium-b: 30px;
+  --fs-small-a: 25px;
+  --fs-small-b: 20px;
+
+  --ff-header: 'Inter';
+  --ff-ghost: 'InterMediumItalic';
+  --ff-body: 'InterMedium';
 }
 
 *, *::before, *::after {

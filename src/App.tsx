@@ -1,7 +1,8 @@
 import './App.css'
 import './fonts.css'
-import Item from './assets/components/Item.tsx'
 import icon from './assets/githubicon.png'
+import About from './assets/components/About'
+import Cards from './assets/components/Cards'
 
 function App() {
 
@@ -22,19 +23,8 @@ function App() {
           <h2>Top</h2>
         </div>
       </div>
-      <div className='items-container'>
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+      <div id='component'>
+        <Cards />
       </div>
     </>
   );

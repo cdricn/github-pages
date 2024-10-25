@@ -1,25 +1,36 @@
 {
   "pageContent": [
     {
+      "title": "Travel Webpage",
+      "header": "Travel Page Web Design",
+      "body": "A web design of a travel webpage to practice responsive ui/ux.",
+      "link": "https://github.com/cdricn/WebDesign-Travel",
+      "image": ""
+    },
+    {
+      "title": "Peo Redesign",
+      "header": "Peo Website Redesign",
+      "body": "A redesign of a vtuber's website to practice responsive ui/ux.",
+      "link": "https://github.com/cdricn/WebDesign-PeoProfile",
+      "image": ""
+    },
+    {
       "title": "GitHub Website",
       "header": "GitHub Pages Repository",
-      "status": "",
       "body": "The GitHub repository for this website.",
       "link": "https://github.com/cdricn/webpage-deploy",
       "image": ""
     },
     {
-      "title": "PIXIV Downloader",
-      "header": "PIXIV Image Downloader",
-      "status": "",
+      "title": "PIXIV Image Downloader",
+      "header": "PIXIV Downloader",
       "body": "A scraping tool to download user artworks on the PIXIV Website using C# and Selenium.",
       "link": "https://github.com/cdricn/PixivDownloader",
       "image": ""
     },
     {
-      "title": "Research Paper",
-      "header": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
-      "status": "done",
+      "title": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
+      "header": "Research Paper",
       "body": "Written as a requirement for university, this paper studies the usefulness and effectiveness of real-time object detection for garbage segregation.",
       "link": "https://drive.google.com/file/d/1jSo16taPl52YO2TOMGLsT8KWNxKRJU3-/view?usp=sharing",
       "image": ""
@@ -27,7 +38,6 @@
     {
       "title": "Coming Soon",
       "header": "",
-      "status": "",
       "body": "",
       "link": "",
       "image": ""
@@ -35,7 +45,6 @@
     {
       "title": "Coming Soon",
       "header": "",
-      "status": "",
       "body": "",
       "link": "",
       "image": ""
@@ -43,15 +52,6 @@
     {
       "title": "Coming Soon",
       "header": "",
-      "status": "",
-      "body": "",
-      "link": "",
-      "image": ""
-    },
-    {
-      "title": "Coming Soon",
-      "header": "",
-      "status": "",
       "body": "",
       "link": "",
       "image": ""

@@ -34,5 +34,18 @@
     url('./assets/fonts/Inter/Inter-VariableFont.ttf') 
 }
 
+@font-face{
+    font-family: "InterMedium";
+    src:local("Inter-Medium"),
+    url('./assets/fonts/Inter/Inter-Medium.ttf') 
+}
+
+@font-face{
+    font-family: "InterMediumItalic";
+    src:local("Inter-MediumItalic"),
+    url('./assets/fonts/Inter/Inter-MediumItalic.ttf') 
+}
+
+
 
 
