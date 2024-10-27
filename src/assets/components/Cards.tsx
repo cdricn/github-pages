@@ -36,8 +36,6 @@ function Cards({data} : DataPropsArr) {
   );
 }
 
-//TODO: Combine projects and design into one function.
-//Put data in another array and pass that to the prop?
 function Selector({deck}: DeckProps) {
   switch (deck) {
     case 'Projects':
@@ -48,23 +46,16 @@ function Selector({deck}: DeckProps) {
   }
 }
 
-function dataPush(data:any) {
-  const dataProp: DataProps[] = [];
-
-  for(let i=0; i<data.length; ++i){
-    dataProp.push({
-      id: data[i].id,
-      tags: data[i].tags,
-      title: data[i].title,
-      header: data[i].header,
-      body: data[i].body,
-      link: data[i].link,
-      image: data[i].image,
-    })
-    console.log("test", i, dataProp)
-  }
-
-  return dataProp
+function dataPush(data:any): DataProps[] {
+  return data.map((item:any) => ({
+    id: item.id,
+    tags: item.tags,
+    title: item.title,
+    header: item.header,
+    body: item.body,
+    link: item.link,
+    image: item.image,
+  }));
 }
 
 export default Selector
