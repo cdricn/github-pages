@@ -62,9 +62,10 @@ p {
   top: -20px;
   width: 72%;
 }
-.menu > :nth-child(3) {
+.menu > :last-child {
   margin-left: auto;
 }
 .menu > h2 {
   cursor: pointer;
 }
+

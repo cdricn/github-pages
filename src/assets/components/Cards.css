@@ -20,6 +20,7 @@
   overflow: hidden;
   text-wrap: wrap;
   cursor: pointer;
+  animation: slideRight 1s;
 }
 .item-number {
   position: absolute;
@@ -29,7 +30,20 @@
   font-family: var(--ff-ghost);
   font-size: var(--fs-xxl);
 }
+.item-tags{
+  font-family: var(--ff-ghost);
+  color: black;
+}
 .item-description {
   position: relative;
-  top: 32%;
+  top: 25%;
+}
+.item-description > h3 {
+  margin-bottom: .5rem;
+  line-height: 2rem;
+}
+
+@keyframes slideRight {
+  0% {opacity: 0%; transform: translateX(-50px);}
+  100% {opacity: 100%; transform: translateX(0px);}
 }
