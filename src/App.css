@@ -1,96 +1,71 @@
-ul, li {
-  list-style-type: none;
-}
 h1 {
-  font-size: 1.2vw;
+  font-size: var(--fs-l-a);
 }
+
+h2 {
+  font-size: var(--fs-medium-b);
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-header);
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--color-text-primary-b);
+  font-size: var(--fs-small-a);
+}
+
 p {
-  font-size: 0.8vw;
-}
-img {
-  font-size: 1vh;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5vh;
+  color: var(--color-text-primary-b);
+  font-family: var(--ff-body);
+  font-size: var(--fs-small-b);
 }
 
-.page-header {
-  color: white;
-  padding-top: 6vh;
-  font-size: 6vh;
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
-.gh-icon {
-  margin-left: 1vh;
+.header > h1 {
+  display: inline;
+}
+.header > span {
   display: inline-block;
-  height: 2.5vh;
-  width: 2.5vh;
+  width: 39px;
+  height: 39px;
 }
 
-.itemview {
-  width: 69%;
+.menu-container {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-primary-a);
+  z-index: 1;
+}
+.menu-container::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 80%;
+  background-color: var(--color-divider-primary);
+}
+
+.menu {
+  margin: auto;
+  padding-top: 2rem;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  gap: 10rem;
+  top: -20px;
+  width: 72%;
+}
+.menu > :last-child {
+  margin-left: auto;
+}
+.menu > h2 {
+  cursor: pointer;
 }
 
-.content {
-  margin-left: 13vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  height: 70vh;
-  gap: 1vmin;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  transform: skewX(-20deg);
-}
-.content::-webkit-scrollbar-button {
-  
-}
-
-.arrow-left, .arrow-right {
-  border: solid rgb(224, 224, 224);
-  border-width: 0 0.7vh 0.7vh 0;
-  display: inline-block;
-  padding: 1vh;
-  transition: .2s;
-}
-.arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-.arrow-right {
-  margin-left: 7vh;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.arrow-left:hover, .arrow-right:hover {
-  border: solid white;
-  border-width: 0 0.7vh 0.7vh 0;
-  display: inline-block;
-  padding: 1.5vh;
-  transition: .3s;
-}
-
-@media (max-width: 1000px) {
-  .content {
-    margin: auto;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    gap: 1vmin;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    transform: skewX(0deg);
-  }
-
-  .arrow-left, .arrow-right {
-    display: none;
-    visibility: hidden;
-  }
-}
