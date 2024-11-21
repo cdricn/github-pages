@@ -13,18 +13,24 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-primary-a: #1A1919;
+  --color-primary-b: #ffffff;
+  --color-shadow-a: #1a191938;
   --color-text-primary: #ffffff;
   --color-text-primary-b: #1A1919;
   --color-text-secondary: #00000023;
   --color-divider-primary: #ffffff;
 
   --fs-xxl: 250px;
-  --fs-l-a: 100px;
-  --fs-l-b: 70px;
-  --fs-medium-a: 40px;
-  --fs-medium-b: 30px;
-  --fs-small-a: 25px;
-  --fs-small-b: 20px;
+  --fs-xl: 175px;
+  --fs-x: 100px;
+  --fs-vl: 80px;
+  --fs-l: 70px;
+  --fs-vh: 60px;
+  --fs-h: 50px;
+  --fs-m: 40px;
+  --fs-s: 30px;
+  --fs-vs: 25px;
+  --fs-normal: 20px;
 
   --ff-header: 'Inter';
   --ff-ghost: 'InterMediumItalic';

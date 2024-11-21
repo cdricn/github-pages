@@ -1,25 +1,28 @@
 h1 {
-  font-size: var(--fs-l-a);
+  font-size: var(--fs-x);
 }
 
 h2 {
-  font-size: var(--fs-medium-b);
+  font-size: var(--fs-h);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: var(--ff-header);
   font-weight: bold;
 }
 
 h3 {
-  color: var(--color-text-primary-b);
-  font-size: var(--fs-small-a);
+  font-size: var(--fs-s);
+}
+
+h4 {
+  font-size: var(--fs-vs);
 }
 
 p {
   color: var(--color-text-primary-b);
   font-family: var(--ff-body);
-  font-size: var(--fs-small-b);
+  font-size: var(--fs-normal);
 }
 
 .header {
@@ -68,4 +71,3 @@ p {
 .menu > h2 {
   cursor: pointer;
 }
-

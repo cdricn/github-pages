@@ -10,10 +10,10 @@ export interface DeckProps {
 }
 
 export interface DataProps {
-  id: string;
+  id?: string;
   tags: string;
   title: string;
-  header: string;
+  header?: string;
   body: string;
   link: string;
   image: string;

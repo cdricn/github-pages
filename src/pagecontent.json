@@ -31,7 +31,7 @@
   "designs": [
     {
       "id": "web_03",
-      "tags": "React",
+      "tags": "React + Vite",
       "title": "Travel Webpage",
       "header": "Travel Site Web Design",
       "body": "A web design of a travel webpage to practice responsive ui/ux.",
@@ -40,7 +40,7 @@
     },
     {
       "id": "web_02",
-      "tags": "React",
+      "tags": "React + Vite",
       "title": "Peo Redesign",
       "header": "Vtuber Page Web Design",
       "body": "A redesign of a vtuber's website to practice responsive ui/ux.",
@@ -49,7 +49,7 @@
     },
     {
       "id": "web_01",
-      "tags": "React",
+      "tags": "React + Vite",
       "title": "GitHub Website",
       "header": "GitHub Pages Repository",
       "body": "The GitHub repository for this website.",
