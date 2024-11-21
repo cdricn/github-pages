@@ -12,7 +12,7 @@ function App() {
     setSelected(section)
   }
 
-  const renderSelected = () => {
+  const renderSelectedData = () => {
     switch (selected) {
       case "Projects":
         return <Selector deck={selected}/>
@@ -37,14 +37,14 @@ function App() {
       </div>
       <div className='menu-container'>
         <div className='menu'>
-          <h2 onClick={() => handleSelected('Projects')}>Projects</h2>
-          <h2 onClick={() => handleSelected('Designs')}>Designs</h2>
-          <h2 onClick={() => handleSelected('About')}>About</h2>
-          <h2 onClick={alert}>Top</h2>
+          <h3 onClick={() => handleSelected('Projects')}>Projects</h3>
+          <h3 onClick={() => handleSelected('Designs')}>Designs</h3>
+          <h3 onClick={() => handleSelected('About')}>About</h3>
+          <h3 onClick={alert}>Top</h3>
         </div>
       </div>
       <div id='display-component'>
-      {renderSelected()}
+      {renderSelectedData()}
       </div>
     </>
   );
