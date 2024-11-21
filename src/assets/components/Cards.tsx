@@ -19,7 +19,6 @@ function Item( {itemCount, itemTags, itemHeader, itemBody} : ItemProps ) {
 }
 
 function ItemEnlarged( {tags, title, body, link, image} : DataProps ) {
-  {console.log("test", title)}
   return(
       <div className='card-popup'>
         <span>{tags}</span>
@@ -41,6 +40,7 @@ function Cards({data} : DataPropsArr) {
 
   const handleClick = ((index:number) => {
     setSelectedItem(index)
+    console.log('You Clicked')
   })
   const handlePopUp = ((toggle:boolean) => {
     setCurrentPopUpState(toggle)
