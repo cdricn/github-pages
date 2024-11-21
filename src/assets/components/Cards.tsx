@@ -78,7 +78,7 @@ function Cards({data} : DataPropsArr) {
           </div>
         ))}
       </div>
-      <div className='overlay-popup-container'>
+      <div className={displayPopUp(currentPopUpState)}>
         {renderSelectedItem(selectedItem)}
         <div className="shadow-overlay" onClick={() => handlePopUp(false)}>
         </div>
