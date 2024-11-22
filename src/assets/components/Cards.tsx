@@ -1,64 +1,29 @@
 import './Cards.css'
 import data from '../../pagecontent.json'
 import { useState } from 'react';
-import { ItemProps, DeckProps, DataProps, DataPropsArr } from './interface';
+import { CardProps, CategoryProps, DataProps, DataPropsWithState, DataPropsArr } from './interface';
 
-function Item( {itemCount, itemTags, itemHeader, itemBody} : ItemProps ) {
-  return (
-    <>
-      <div className='item-number'>{itemCount}</div>
-      <div className='item-description'>
-        <span className={`item-tags`}>{itemTags}</span>
-        <h4>{itemHeader}</h4>
-        <p>
-          {itemBody}
-        </p>
-      </div>
-    </>
-  );
-}
+function CardsRenderer({data} : DataPropsArr) {
+  const [selectedItem, setSelectedItem] = useState({
+    index: 0,
+    showPopUp: false
+  });
 
-function ItemEnlarged( {tags, title, body, link, image} : DataProps ) {
-  return(
-      <div className='card-popup'>
-        <span>{tags}</span>
-        <h2>{title}</h2>
-        <div className='card-body'>
-          <p>{body}</p>
-          <h4>Links</h4>
-          <p>Github: {link}</p>
-          <h4>Gallery</h4>
-          <div>{image}</div>
-        </div>
-      </div>
-  );
-}
-
-function Cards({data} : DataPropsArr) {
-  const [selectedItem, setSelectedItem] = useState(0);
-  const [currentPopUpState, setCurrentPopUpState] = useState(false);
-
-  const handleClick = ((index:number) => {
-    setSelectedItem(index)
-    console.log('You Clicked')
+  const handleClickShow = ((index:number) => {
+    setSelectedItem({ index, showPopUp: true })
   })
-  const handlePopUp = ((toggle:boolean) => {
-    setCurrentPopUpState(toggle)
-  })
-  const displayPopUp = ((toggle:boolean) => {
-    let className = toggle ? 
-    'overlay-popup-container' : 
-    ['overlay-popup-container', 'hidden'].join(' ')
-    return className
-  })
-  const renderSelectedItem = (index:number) => {  
+  const handleClickHide = () => {
+    setSelectedItem({ index: 0, showPopUp: false })
+  }
+  const renderItemPopUp = (index:number) => {  
     const item = data[index];
-    return <ItemEnlarged 
+    return <CardEnlarged 
       tags = {item.tags}
       title = {item.header || "//"}
       body = {item.body}
       link = {item.link}
       image = {item.image}
+      handlePopUp = {handleClickHide}
     />
   }
 
@@ -67,36 +32,66 @@ function Cards({data} : DataPropsArr) {
       <div className='items-container'>
         {data.map((item, index) => (
           <div className='item-box' 
-            onClick={() => {handleClick(index); handlePopUp(true)}} 
-            key={item.id}>
-              <Item 
-                itemCount = {"0".concat((data.length-index).toString())}
-                itemTags = {item.tags}
-                itemHeader = {item.header ? item.header : "//"}
-                itemBody = {item.body}
+            onClick={() => {handleClickShow(index)}} key={item.id}>
+              <Card 
+                cardCount = {"0".concat((data.length-index).toString())}
+                cardTags = {item.tags}
+                cardHeader = {item.header ? item.header : "//"}
+                cardBody = {item.body}
               />
           </div>
         ))}
       </div>
-      <div className={displayPopUp(currentPopUpState)}>
-        {renderSelectedItem(selectedItem)}
-        <div className="shadow-overlay" onClick={() => handlePopUp(false)}>
+      {selectedItem.showPopUp ? renderItemPopUp(selectedItem.index) : null}
+    </>
+  );
+}
+
+function CardEnlarged({ tags, title, body, link, image, handlePopUp } : DataPropsWithState) {
+  return(
+    <div className='overlay-popup-container'>
+      <div className='card-popup'>
+        <span>{tags}</span>
+        <h2>{title}</h2>
+        <div className='card-body'>
+          <p>{body}</p>
+          <h4>Links</h4>
+          <p>Github: <a href={link}>{link}</a></p>
+          <h4>Gallery</h4>
+          <div>{image}</div>
         </div>
+      </div>
+      <div className="shadow-overlay" onClick={handlePopUp}>
+      </div>
+    </div>
+  );
+}
+
+function Card( {cardCount, cardTags, cardHeader, cardBody} : CardProps ) {
+  return (
+    <>
+      <div className='item-number'>{cardCount}</div>
+      <div className='item-description'>
+        <span className={`item-tags`}>{cardTags}</span>
+        <h4>{cardHeader}</h4>
+        <p>
+          {cardBody}
+        </p>
       </div>
     </>
   );
 }
 
-function Selector({deck}: DeckProps) {
-  switch (deck) {
+function CategorySelector({category}: CategoryProps) {
+  switch (category) {
     case 'Projects':
-      return <Cards data={dataPush(data.projects)}/>
+      return <CardsRenderer data={dataPusher(data.projects)}/>
     case 'Designs':
-      return <Cards data={dataPush(data.designs)}/>
+      return <CardsRenderer data={dataPusher(data.designs)}/>
   }
 }
 
-function dataPush(data:any): DataProps[] {
+function dataPusher(data:any): DataProps[] {
   return data.map((item:any) => ({
     id: item.id,
     tags: item.tags,
@@ -108,4 +103,4 @@ function dataPush(data:any): DataProps[] {
   }));
 }
 
-export default Selector
+export default CategorySelector

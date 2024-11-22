@@ -56,10 +56,11 @@
 }
 .shadow-overlay {
   position: fixed;
+  top: 0;
   height: 100%;
   width: 100%;
   background-color: var(--color-shadow-a);
-  z-index: 50;
+  z-index: 1;
 }
 .card-popup {
   margin: auto;

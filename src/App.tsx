@@ -2,8 +2,8 @@ import './App.css'
 import './fonts.css'
 import icon from './assets/githubicon.png'
 import About from './assets/components/About'
+import CategorySelector from './assets/components/Cards'
 
-import Selector from './assets/components/Cards'
 import { useState } from "react"
 
 function App() {
@@ -16,13 +16,13 @@ function App() {
   const renderSelectedData = () => {
     switch (selected) {
       case "Projects":
-        return <Selector deck={selected}/>
+        return <CategorySelector category={selected}/>
       case "Designs":
-        return <Selector deck={selected}/>
+        return <CategorySelector category={selected}/>
       case "About":
         return <About />
       default:
-        return <Selector deck={selected}/>
+        return <CategorySelector category={selected}/>
     }
   }
 

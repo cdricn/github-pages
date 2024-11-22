@@ -1,12 +1,12 @@
-export interface ItemProps {
-  itemCount: string;
-  itemTags?: string;
-  itemHeader: string;
-  itemBody: string;
+export interface CategoryProps {
+  category: string;
 }
 
-export interface DeckProps {
-  deck: string;
+export interface CardProps {
+  cardCount: string;
+  cardTags?: string;
+  cardHeader: string;
+  cardBody: string;
 }
 
 export interface DataProps {
@@ -17,6 +17,10 @@ export interface DataProps {
   body: string;
   link: string;
   image: string;
+}
+
+export interface DataPropsWithState extends DataProps {
+  handlePopUp: () => void;
 }
 
 export interface DataPropsArr{
