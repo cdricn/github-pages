@@ -27,11 +27,11 @@
   top: -120px;
   right: 100px;
   color: var(--color-text-secondary);
-  font-family: var(--ff-ghost);
+  font-family: var(--ff-italic);
   font-size: var(--fs-xxl);
 }
 .item-tags{
-  font-family: var(--ff-ghost);
+  font-family: var(--ff-italic);
   color: black;
 }
 .item-description {
@@ -44,9 +44,6 @@
   color: var(--color-text-primary-b);
 }
 
-.hidden {
-  visibility: hidden;
-}
 .overlay-popup-container {
   position: fixed;
   top: 0;

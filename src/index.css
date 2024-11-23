@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: var(--color-text-primary);
-  background: var(--color-primary-a);
+  background: linear-gradient(0deg, rgba(26,25,25,1) 70%, rgba(46,44,44,1) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,6 +14,7 @@
 
   --color-primary-a: #1A1919;
   --color-primary-b: #ffffff;
+  --color-secondary-dark: #2e2c2c;
   --color-shadow-a: #1a191938;
   --color-text-primary: #ffffff;
   --color-text-primary-b: #1A1919;
@@ -33,7 +34,7 @@
   --fs-normal: 20px;
 
   --ff-header: 'Inter';
-  --ff-ghost: 'InterMediumItalic';
+  --ff-italic: 'InterMediumItalic';
   --ff-body: 'InterMedium';
 }
 

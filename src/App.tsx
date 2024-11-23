@@ -19,8 +19,6 @@ function App() {
         return <CategorySelector category={selected}/>
       case "Designs":
         return <CategorySelector category={selected}/>
-      case "About":
-        return <About />
       default:
         return <CategorySelector category={selected}/>
     }
@@ -28,23 +26,45 @@ function App() {
 
   return (
     <>
-      <div className='header'>
-        <h1>CDRICN</h1>
-        <span>
-          <a href='https://github.com/cdricn'>
-            <img src={icon} className='test'></img>
-          </a>
-        </span>
+      <div className='section-home'>
+        <div className='home-info-container'>
+          <div className='home-info-header'>
+            <h1>Hello,<br/>I'm Adrian!</h1>
+          </div>
+          <div className='home-info-introduction'>
+            <p>
+              I'm an aspiring software developer residing
+              in the Philippines. I like to make websites with
+              neat designs and good functionality.
+            </p>
+          </div>
+        </div>
+        <div className='home-links-container'>
+          <div className='circle-link'>
+            <a href='https://github.com/cdricn' target='_blank'>
+              <img src='github_circle.png'></img>
+            </a>
+          </div>
+          <div className='circle-link'>
+            <a href='https://www.linkedin.com/in/adrian-cortezano-95b749254/' target='_blank'>
+              <img src='linkedin_circle.png'></img>
+            </a>
+          </div>
+          <div className='circle-link'>
+            <a href='https://cdricn.itch.io/' target='_blank'>
+              <img src='itch_circle.png'></img>
+            </a>
+          </div>
+        </div>
       </div>
-      <div className='menu-container'>
+      <div className='section-menu'>
         <div className='menu'>
           <h3 onClick={() => handleSelected('Projects')}>Projects</h3>
           <h3 onClick={() => handleSelected('Designs')}>Designs</h3>
-          <h3 onClick={() => handleSelected('About')}>About</h3>
           <h3 onClick={alert}>Top</h3>
         </div>
       </div>
-      <div id='display-component'>
+      <div className='section-cards'>
       {renderSelectedData()}
       </div>
     </>
