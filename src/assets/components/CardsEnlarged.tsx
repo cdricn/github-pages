@@ -3,7 +3,7 @@ import { DataPropsWithState } from './interface'
 
 function CardEnlarged({ tags, title, body, link, image, handlePopUp } : DataPropsWithState) {
   return(
-    <div className='overlay-popup-container'>
+    <section className='overlay-popup-container'>
       <div className='popup-card'>
         <span>{tags}</span>
         <h2>{title}</h2>
@@ -17,7 +17,7 @@ function CardEnlarged({ tags, title, body, link, image, handlePopUp } : DataProp
       </div>
       <div className="shadow-overlay" onClick={handlePopUp}>
       </div>
-    </div>
+    </section>
   );
 }
 

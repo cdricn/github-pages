@@ -30,7 +30,7 @@ function CardsRenderer({data} : DataPropsArr) {
 
   return (
     <>
-      <div className='card-container'>
+      <main className='card-container'>
         {data.map((item, index) => (
           <div className='card-box' 
             onClick={() => {handleClickShow(index)}} key={item.id}>
@@ -42,7 +42,7 @@ function CardsRenderer({data} : DataPropsArr) {
               />
           </div>
         ))}
-      </div>
+      </main>
       {selectedItem.showPopUp ? renderItemPopUp(selectedItem.index) : null}
     </>
   );

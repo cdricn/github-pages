@@ -1,6 +1,7 @@
 h1, h2, h3, h4 {
   font-family: var(--ff-header);
   font-weight: bold;
+  line-height: normal;
 }
 h1 {
   font-size: var(--fs-x);
@@ -19,21 +20,25 @@ p {
   font-family: var(--ff-body);
 }
 
+.section-home, .section-menu, .section-cards {
+  padding: 1rem;
+}
 .section-home {
   height: 100svh;
   overflow: hidden;
 }
 .home-wrapper {
-  padding-top: 11rem;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  gap: clamp(32px, calc(2rem + ((1vw - 11px) * 25.3659)), 240px);;
   width: fit-content;
+  height: 100%;
 }
 
 .home-info-container {
+  padding-top: 11rem;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -41,7 +46,6 @@ p {
 }
 .home-info-header {
   position: relative;
-  line-height: 8rem;
 }
 .home-info-header::after {
   content: '';
@@ -61,6 +65,7 @@ p {
 }
 
 .home-links-container {
+  padding-top: 11rem;
   position: relative;
   width: fit-content;
   height: fit-content;
@@ -78,7 +83,7 @@ p {
   width: 5px;
 }
 .home-links-container::after {
-  top: 7rem;
+  top: 18rem;
   left: 1rem;
   height: 5px;
   width: 500%;
@@ -98,6 +103,9 @@ p {
   width: 225px;
   height: 225px;
 }
+.circle-link:nth-child(3) {
+  grid-column: 2;
+}
 .circle-link > a {
   display: block;
   border-radius: 1000px;
@@ -107,6 +115,7 @@ p {
 .section-menu {
   position: sticky;
   top: 0;
+  height: 90px;
   background-color: var(--color-bg-dark);
   z-index: 1;
 }
@@ -123,11 +132,12 @@ p {
 }
 .menu {
   margin: auto;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   position: relative;
   display: flex;
   gap: 10rem;
   top: -20px;
+  min-width: fit-content;
   width: 72%;
   color: var(--color-text-light);
 }
@@ -139,5 +149,61 @@ p {
 }
 
 .section-cards {
+  display: flex;
+  justify-content: center;
   min-height: 90svh;
+}
+
+/*Layout for ipads*/
+@media (width < 1100px) {
+  h1 {
+    font-size: var(--fs-x-1100px);
+  }
+  .home-info-container {
+    padding-top: 0;
+    margin: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .home-wrapper {
+    gap: clamp(32px, calc(2rem + ((1vw - 6.05px) * 19.3939)), 128px);
+  }
+  .home-links-container {
+    padding-top: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  .home-info-header::after, .home-links-container::after {
+    visibility: hidden;
+  }
+  .home-links-container::before{
+    right: 6.1rem;
+    bottom: 1rem;
+  }
+  .circle-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 225px);
+    gap: 2rem;
+  }
+  .circle-link {
+    width: 200px;
+    height: 200px;
+  }
+  .circle-link:nth-child(3) {
+    grid-column: 1;
+  }
+  .section-menu::after {
+    width: 88%;
+  }
+  .menu {
+    width: 80%;
+    gap: clamp(32px, calc(2rem + ((1vw - 6px) * 25.6)), 160px);;
+  }
+}
+
+/*Layout for phones*/
+@media (width < 600px) {
+  
 }

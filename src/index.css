@@ -25,6 +25,7 @@
   --fs-xxl: 250px;
   --fs-xl: 175px;
   --fs-x: 100px;
+  --fs-x-1100px: clamp(65px, calc(4.0625rem + ((1vw - 6px) * 6.8627)), var(--fs-x));
   --fs-vl: 80px;
   --fs-l: 70px;
   --fs-vh: 60px;

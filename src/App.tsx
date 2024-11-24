@@ -1,7 +1,5 @@
 import './App.css'
 import './fonts.css'
-import icon from './assets/githubicon.png'
-import About from './assets/components/CardsEnlarged'
 import CategorySelector from './assets/components/Cards'
 
 import { useState } from "react"
@@ -26,8 +24,8 @@ function App() {
 
   return (
     <>
-      <div className='section-home'>
-        <div className='home-wrapper'>
+      <section className='section-home'>
+        <header className='home-wrapper'>
           <div className='home-info-container'>
             <div className='home-info-header'>
               <h1>Hello,<br/>I'm Adrian!</h1>
@@ -53,7 +51,6 @@ function App() {
                   <img src='linkedin_circle.png'></img>
                 </a>
               </div>
-              <div></div>
               <div className='circle-link'>
                 <a href='https://cdricn.itch.io/' target='_blank'>
                   <img src='itch_circle.png'></img>
@@ -62,18 +59,18 @@ function App() {
             </div>
 
           </div>
-        </div>
-      </div>
-      <div className='section-menu'>
+        </header>
+      </section>
+      <nav className='section-menu'>
         <div className='menu'>
           <h3 onClick={() => handleSelected('Projects')}>Projects</h3>
           <h3 onClick={() => handleSelected('Designs')}>Designs</h3>
           <h3 onClick={alert}>Top</h3>
         </div>
-      </div>
-      <div className='section-cards'>
-      {renderSelectedData()}
-      </div>
+      </nav>
+      <section className='section-cards'>
+        {renderSelectedData()}
+      </section>
     </>
   );
 }
