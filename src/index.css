@@ -12,14 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-primary-a: #1A1919;
-  --color-primary-b: #ffffff;
+  --color-bg-dark: #1A1919;
+  --color-bg-light: #ffffff;
   --color-secondary-dark: #2e2c2c;
-  --color-shadow-a: #1a191938;
-  --color-text-primary: #ffffff;
-  --color-text-primary-b: #1A1919;
-  --color-text-secondary: #00000023;
-  --color-divider-primary: #ffffff;
+  --color-overlay-shadow: #1a191938;
+  --color-text-dark: #1A1919;
+  --color-text-light: #ffffff;
+  --color-text-shadow-a: #00000023;
+  --color-divider: #ffffff;
+  --color-divider-dark: #1A1919;
 
   --fs-xxl: 250px;
   --fs-xl: 175px;

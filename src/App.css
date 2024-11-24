@@ -29,13 +29,15 @@ p {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  gap: 4rem;
+  width: fit-content;
 }
 
 .home-info-container {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  color: var(--color-text-light);
 }
 .home-info-header {
   position: relative;
@@ -50,13 +52,12 @@ p {
   left: -520%;
   height: 5px;
   width: 500%;
-  background-color: var(--color-primary-b);
+  background-color: var(--color-divider);
 }
 .home-info-introduction {
   padding-left: .3rem;
   line-height: 1.5rem;
   max-width: 435px;
-  color: var(--color-text-primary);
 }
 
 .home-links-container {
@@ -67,7 +68,7 @@ p {
 .home-links-container::before, .home-links-container::after {
   content: '';
   position: absolute;
-  background-color: var(--color-primary-b);
+  background-color: var(--color-divider);
   z-index: 0;
 }
 .home-links-container::before {
@@ -106,7 +107,7 @@ p {
 .section-menu {
   position: sticky;
   top: 0;
-  background-color: var(--color-primary-a);
+  background-color: var(--color-bg-dark);
   z-index: 1;
 }
 .section-menu::after {
@@ -116,9 +117,9 @@ p {
   bottom: 10px;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 2px;
   width: 80%;
-  background-color: var(--color-divider-primary);
+  background-color: var(--color-divider);
 }
 .menu {
   margin: auto;
@@ -128,6 +129,7 @@ p {
   gap: 10rem;
   top: -20px;
   width: 72%;
+  color: var(--color-text-light);
 }
 .menu > :last-child {
   margin-left: auto;

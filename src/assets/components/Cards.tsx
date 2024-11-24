@@ -1,7 +1,8 @@
 import './Cards.css'
 import data from '../../pagecontent.json'
+import CardEnlarged from './CardsEnlarged';
 import { useState } from 'react';
-import { CardProps, CategoryProps, DataProps, DataPropsWithState, DataPropsArr } from './interface';
+import { CardProps, CategoryProps, DataProps, DataPropsArr } from './interface';
 
 function CardsRenderer({data} : DataPropsArr) {
   const [selectedItem, setSelectedItem] = useState({
@@ -29,9 +30,9 @@ function CardsRenderer({data} : DataPropsArr) {
 
   return (
     <>
-      <div className='items-container'>
+      <div className='card-container'>
         {data.map((item, index) => (
-          <div className='item-box' 
+          <div className='card-box' 
             onClick={() => {handleClickShow(index)}} key={item.id}>
               <Card 
                 cardCount = {"0".concat((data.length-index).toString())}
@@ -47,32 +48,12 @@ function CardsRenderer({data} : DataPropsArr) {
   );
 }
 
-function CardEnlarged({ tags, title, body, link, image, handlePopUp } : DataPropsWithState) {
-  return(
-    <div className='overlay-popup-container'>
-      <div className='card-popup'>
-        <span>{tags}</span>
-        <h2>{title}</h2>
-        <div className='card-body'>
-          <p>{body}</p>
-          <h4>Links</h4>
-          <p>Github: <a href={link}>{link}</a></p>
-          <h4>Gallery</h4>
-          <div>{image}</div>
-        </div>
-      </div>
-      <div className="shadow-overlay" onClick={handlePopUp}>
-      </div>
-    </div>
-  );
-}
-
 function Card( {cardCount, cardTags, cardHeader, cardBody} : CardProps ) {
   return (
     <>
-      <div className='item-number'>{cardCount}</div>
-      <div className='item-description'>
-        <span className={`item-tags`}>{cardTags}</span>
+      <div className='card-number'>{cardCount}</div>
+      <div className='card-description'>
+        <span className='card-tags'>{cardTags}</span>
         <h4>{cardHeader}</h4>
         <p>
           {cardBody}

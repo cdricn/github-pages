@@ -1,7 +1,7 @@
 import './App.css'
 import './fonts.css'
 import icon from './assets/githubicon.png'
-import About from './assets/components/About'
+import About from './assets/components/CardsEnlarged'
 import CategorySelector from './assets/components/Cards'
 
 import { useState } from "react"
@@ -35,8 +35,8 @@ function App() {
             <div className='home-info-introduction'>
               <p>
                 I'm an aspiring software developer residing
-                in the Philippines. I like to make websites with
-                neat designs and good functionality.
+                in the Philippines. I like to make responsive websites with
+                neat designs.
               </p>
             </div>
           </div>
@@ -60,6 +60,7 @@ function App() {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
