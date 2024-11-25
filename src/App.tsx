@@ -2,13 +2,18 @@ import './App.css'
 import './fonts.css'
 import CategorySelector from './assets/components/Cards'
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 function App() {
   const [selected, setSelected] = useState("Projects");
 
   const handleSelected = (section:string) => {
     setSelected(section)
+  }
+
+  const scrollRef = useRef<HTMLDivElement>(null); 
+  const scrollToTop = () => {
+    scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
   const renderSelectedData = () => {
@@ -24,7 +29,7 @@ function App() {
 
   return (
     <>
-      <section className='section-home'>
+      <section className='section-home' ref={scrollRef}>
         <header className='home-wrapper'>
           <div className='home-info-container'>
             <div className='home-info-header'>
@@ -65,12 +70,12 @@ function App() {
         <div className='menu'>
           <h3 onClick={() => handleSelected('Projects')}>Projects</h3>
           <h3 onClick={() => handleSelected('Designs')}>Designs</h3>
-          <h3 onClick={alert}>Top</h3>
+          <h3 onClick={scrollToTop}>Top</h3>
         </div>
       </nav>
-      <section className='section-cards'>
+      <main className='section-cards'>
         {renderSelectedData()}
-      </section>
+      </main>
     </>
   );
 }

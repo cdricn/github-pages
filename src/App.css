@@ -144,7 +144,7 @@ p {
 .menu > :last-child {
   margin-left: auto;
 }
-.menu > h2 {
+.menu > h3 {
   cursor: pointer;
 }
 

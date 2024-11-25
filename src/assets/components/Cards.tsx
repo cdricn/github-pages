@@ -18,11 +18,14 @@ function CardsRenderer({data} : DataPropsArr) {
   }
   const renderItemPopUp = (index:number) => {  
     const item = data[index];
+    console.log("test", item.link2)
     return <CardEnlarged 
       tags = {item.tags}
-      title = {item.header || "//"}
-      body = {item.body}
+      header = {item.header || "//"}
+      details = {item.details}
+      content = {item.content}
       link = {item.link}
+      link2 = {item.link2}
       image = {item.image}
       handlePopUp = {handleClickHide}
     />
@@ -30,33 +33,33 @@ function CardsRenderer({data} : DataPropsArr) {
 
   return (
     <>
-      <main className='card-container'>
+      <ul className='card-container'>
         {data.map((item, index) => (
-          <div className='card-box' 
+          <li className='card-box' 
             onClick={() => {handleClickShow(index)}} key={item.id}>
               <Card 
                 cardCount = {"0".concat((data.length-index).toString())}
                 cardTags = {item.tags}
-                cardHeader = {item.header ? item.header : "//"}
-                cardBody = {item.body}
+                cardTitle = {item.title ? item.title : "//"}
+                cardDetails = {item.details!}
               />
-          </div>
+          </li>
         ))}
-      </main>
+      </ul>
       {selectedItem.showPopUp ? renderItemPopUp(selectedItem.index) : null}
     </>
   );
 }
 
-function Card( {cardCount, cardTags, cardHeader, cardBody} : CardProps ) {
+function Card( {cardCount, cardTags, cardTitle, cardDetails} : CardProps ) {
   return (
     <>
       <div className='card-number'>{cardCount}</div>
       <div className='card-description'>
         <span className='card-tags'>{cardTags}</span>
-        <h4>{cardHeader}</h4>
+        <h4>{cardTitle}</h4>
         <p>
-          {cardBody}
+          {cardDetails}
         </p>
       </div>
     </>
@@ -78,8 +81,10 @@ function dataPusher(data:any): DataProps[] {
     tags: item.tags,
     title: item.title,
     header: item.header,
-    body: item.body,
+    details: item.details,
+    content: item.content,
     link: item.link,
+    link2: item.link2,
     image: item.image,
   }));
 }

@@ -5,17 +5,19 @@ export interface CategoryProps {
 export interface CardProps {
   cardCount: string;
   cardTags?: string;
-  cardHeader: string;
-  cardBody: string;
+  cardTitle: string;
+  cardDetails: string;
 }
 
 export interface DataProps {
   id?: string;
   tags: string;
-  title: string;
-  header?: string;
-  body: string;
-  link: string;
+  title?: string;
+  header: string;
+  details?: string;
+  content: string;
+  link: Array<string>;
+  link2?: Array<string>;
   image: string;
 }
 
