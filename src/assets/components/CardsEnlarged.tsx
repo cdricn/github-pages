@@ -5,21 +5,21 @@ function CardEnlarged({ tags, header, details, content, link, link2, image, hand
 
   return(
     <section className='overlay-popup-container'>
-      <div className='popup-card'>
+      <article className='popup-card'>
         <span>{tags}</span>
-        <h2>{header}</h2>
+        <h1>{header}</h1>
         <div className='popup-body'>
-          <p>{details}<br/>{content}</p>
-          <h4>Links</h4>
+          <p>{details} {content}</p>
+          <h2>Links</h2>
           <p>{link[0]}: <a href={link[1]} target='_blank'>{link[1]}</a></p>
           {
             link2![0] == null ? null : 
             <p>{link2![0]}: <a href={link2![1]} target='_blank'>{link2![1]}</a></p>
           }
-          <h4>Gallery</h4>
+          <h2>Gallery</h2>
           <div>{image}</div>
         </div>
-      </div>
+      </article>
       <div className="shadow-overlay" onClick={handlePopUp}>
       </div>
     </section>

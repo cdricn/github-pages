@@ -57,7 +57,7 @@ function Card( {cardCount, cardTags, cardTitle, cardDetails} : CardProps ) {
       <div className='card-number'>{cardCount}</div>
       <div className='card-description'>
         <span className='card-tags'>{cardTags}</span>
-        <h4>{cardTitle}</h4>
+        <h1>{cardTitle}</h1>
         <p>
           {cardDetails}
         </p>

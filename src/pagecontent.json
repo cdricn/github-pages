@@ -6,7 +6,7 @@
       "title": "All Hollow's Eve VN",
       "header": "All Hollow's Eve VN",
       "details": "A 1-bit horror visual novel made using RenPy for a halloween themed game jam.",
-      "content": "Credits for the members are in the Github and Itch.io page.",
+      "content": "Credits to \"Leigh\" for the story, and \"Dump\" for helping with the art and music.",
       "link": ["Github","https://github.com/cdricn/AllHollowsEveVN"],
       "link2": ["Itch.io","https://cdricn.itch.io/all-hollows-eve"],
       "image": ""
@@ -27,8 +27,8 @@
       "tags": "YOLOv4",
       "title": "Research Paper",
       "header": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
-      "details": "Thesis paper during university studying the effectiveness of real-time object detection for garbage segregation.",
-      "content": "",
+      "details": "Our thesis paper studying the effectiveness of real-time object detection for garbage segregation.",
+      "content": "Used YOLOv4 for the Object Detection model and Python for the UI.",
       "link": ["Google Drive","https://drive.google.com/file/d/1jSo16taPl52YO2TOMGLsT8KWNxKRJU3-/view?usp=sharing"],
       "link2": [],
       "image": ""
@@ -41,14 +41,14 @@
       "title": "Yamazakura Website",
       "header": "Yamazakura Website",
       "details": "A personal website made for a friend.",
-      "content": "Currently a work in progress to redo the overall layout design.",
+      "content": "Currently a work in progress to redo the overall design layout.",
       "link": ["Website","https://leigh-page.vercel.app/"],
       "link2": [],
       "image": ""
     },
     {
       "id": "web_03",
-      "tags": "React+Vite, TS, CSS",
+      "tags": "React+Vite, CSS",
       "title": "Travel Site Web Design",
       "header": "Travel Site Web Design",
       "details": "A web design of a travel webpage to practice complex ui/ux.",
@@ -59,11 +59,11 @@
     },
     {
       "id": "web_02",
-      "tags": "React+Vite, TS, CSS",
+      "tags": "React+Vite, CSS",
       "title": "Vtuber Page Web Design",
       "header": "Vtuber Page Web Design",
-      "details": "A redesign of a vtuber's website to practice responsive ui/ux.",
-      "content": "",
+      "details": "A redesign of a vtuber's website focusing on responsive UI/UX as practice.",
+      "content": "Made mostly using CSS.",
       "link": ["Github","https://github.com/cdricn/WebDesign-PeoProfile"],
       "link2": [],
       "image": ""
@@ -74,7 +74,7 @@
       "title": "GitHub Pages Repository",
       "header": "GitHub Pages Repository",
       "details": "The GitHub repository for this website.",
-      "content": "",
+      "content": "Created using React + Vite with Typescript.",
       "link": ["Github","https://github.com/cdricn/webpage-deploy"],
       "link2": [],
       "image": ""

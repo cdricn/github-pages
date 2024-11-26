@@ -67,11 +67,11 @@ function App() {
         </header>
       </section>
       <nav className='section-menu'>
-        <div className='menu'>
-          <h3 onClick={() => handleSelected('Projects')}>Projects</h3>
-          <h3 onClick={() => handleSelected('Designs')}>Designs</h3>
-          <h3 onClick={scrollToTop}>Top</h3>
-        </div>
+        <ul className='menu'>
+          <li onClick={() => handleSelected('Projects')}>Projects</li>
+          <li onClick={() => handleSelected('Designs')}>Designs</li>
+          <li onClick={scrollToTop}>Top</li>
+        </ul>
       </nav>
       <main className='section-cards'>
         {renderSelectedData()}

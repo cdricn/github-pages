@@ -26,6 +26,7 @@
   --fs-xl: 175px;
   --fs-x: 100px;
   --fs-x-1100px: clamp(65px, calc(4.0625rem + ((1vw - 6px) * 6.8627)), var(--fs-x));
+  --fs-x-500px: clamp(var(--fs-vh), calc(3.75rem + ((1vw - 3.44px) * 12.8205)), var(--fs-vl));
   --fs-vl: 80px;
   --fs-l: 70px;
   --fs-vh: 60px;
@@ -33,11 +34,11 @@
   --fs-m: 40px;
   --fs-s: 30px;
   --fs-vs: 25px;
-  --fs-normal: 20px;
+  --fs-normal: 18px;
 
-  --ff-header: 'Inter';
+  --ff-normal: 'Inter';
   --ff-italic: 'InterMediumItalic';
-  --ff-body: 'InterMedium';
+  --ff-medium: 'InterMedium';
 }
 
 *, *::before, *::after {
