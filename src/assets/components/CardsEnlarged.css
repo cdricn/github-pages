@@ -26,13 +26,13 @@
   z-index: 51;
   transition: .3s;
 }
-.popup-card > h1 {
+.popup-body > h1 {
   position: relative;
   line-height: 3rem;
   margin-bottom: 2rem;
   font-size: var(--fs-h);
 }
-.popup-card > h1::after {
+.popup-body > h1::after {
   content: "";
   position: absolute;
   bottom: .4rem;
@@ -42,17 +42,18 @@
   width: 15px;
   background-color: var(--color-divider-dark);
 }
-.popup-body > p {
+
+.popup-links > p, .popup-gallery > img, .popup-gallery > p {
   position: relative;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-.popup-body > h2 {
+.popup-links > h2 , .popup-gallery > h2 {
   position: relative;
   margin: 1rem;
   font-size: var(--fs-vs);
 }
-.popup-body > h2::after {
+.popup-links > h2::after, .popup-gallery > h2::after {
   content: "";
   position: absolute;
   bottom: 0;

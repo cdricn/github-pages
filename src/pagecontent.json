@@ -37,12 +37,12 @@
   "designs": [
     {
       "id": "web_04",
-      "tags": "React+Vite, TS, JS, CSS",
-      "title": "Yamazakura Website",
-      "header": "Yamazakura Website",
+      "tags": "React, NextJS",
+      "title": "Yamazakura Blog",
+      "header": "Yamazakura Blog",
       "details": "A personal website made for a friend.",
-      "content": "Currently a work in progress to redo the overall design layout.",
-      "link": ["Website","https://leigh-page.vercel.app/"],
+      "content": "Currently a work in progress.",
+      "link": ["Website","https://ymzk-blog.vercel.app/"],
       "link2": [],
       "image": ""
     },
@@ -70,7 +70,7 @@
     },
     {
       "id": "web_01",
-      "tags": "React+Vite, TS, JS, CSS",
+      "tags": "React+Vite, TS",
       "title": "GitHub Pages Repository",
       "header": "GitHub Pages Repository",
       "details": "The GitHub repository for this website.",
