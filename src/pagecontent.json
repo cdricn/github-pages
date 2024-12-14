@@ -37,9 +37,9 @@
   "designs": [
     {
       "id": "web_04",
-      "tags": "React, NextJS",
-      "title": "Yamazakura Blog",
-      "header": "Yamazakura Blog",
+      "tags": "React+NextJS, Neon Postgres",
+      "title": "YMZK Website",
+      "header": "YMZK Website",
       "details": "A personal website made for a friend.",
       "content": "Currently a work in progress.",
       "link": ["Website","https://ymzk-blog.vercel.app/"],
