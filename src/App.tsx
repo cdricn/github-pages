@@ -33,30 +33,30 @@ function App() {
         <header className='home-wrapper'>
           <div className='home-info-container'>
             <div className='home-info-header'>
-              <h1>Hello,<br/>I'm Adrian!</h1>
+              <h1><span className='head-1'>Hello,</span><br/>
+              <span className='head-2'>I'm</span> <span className='head-3'>Adrian!</span></h1>
             </div>
             <div className='home-info-introduction'>
               <p>
                 I'm an aspiring software developer residing
-                in the Philippines. I like to make responsive websites with
-                neat designs.
+                in the Philippines. I like to websites.
               </p>
             </div>
           </div>
           <div className='home-links-container'>
             
             <div className='circle-container'>
-              <div className='circle-link'>
+              <div className='circle-link gh'>
                 <a href='https://github.com/cdricn' target='_blank'>
                   <img src='github_circle.png'></img>
                 </a>
               </div>
-              <div className='circle-link'>
+              <div className='circle-link ln'>
                 <a href='https://www.linkedin.com/in/adrian-cortezano-95b749254/' target='_blank'>
                   <img src='linkedin_circle.png'></img>
                 </a>
               </div>
-              <div className='circle-link'>
+              <div className='circle-link itch'>
                 <a href='https://cdricn.itch.io/' target='_blank'>
                   <img src='itch_circle.png'></img>
                 </a>

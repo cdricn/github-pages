@@ -45,12 +45,13 @@
 
 .popup-links > p, .popup-gallery > img, .popup-gallery > p {
   position: relative;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 .popup-links > h2 , .popup-gallery > h2 {
   position: relative;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
   font-size: var(--fs-vs);
 }
 .popup-links > h2::after, .popup-gallery > h2::after {

@@ -52,11 +52,27 @@ ul {
   height: 5px;
   width: 650%;
   background-color: var(--color-divider);
+  animation: fadeIn 1s ease-in forwards;
+}
+.head-1, .head-2, .head-3 {
+  opacity: 0;
+  display: inline-block;
+  animation: floatUp 1s forwards;
+}
+.head-2 {
+  animation-delay: .2s;
+}
+.head-3 {
+  animation-delay: .5s;
 }
 .home-info-introduction {
   padding-left: .3rem;
   line-height: normal;
   max-width: 450px;
+
+  opacity: 0;
+  animation: floatUp 1s forwards;
+  animation-delay: .8s;
 }
 .home-info-introduction > p {
   font-size: var(--fs-vs);
@@ -78,13 +94,16 @@ ul {
   bottom: 1rem;
   height: 500%;
   width: 5px;
+  animation: fadeIn 1s ease-in forwards;
 }
 .home-links-container::after {
   top: 7rem;
   left: 1rem;
   height: 5px;
-  width: 800%;
+  width: 850%;
+  animation: fadeIn 1s ease-in forwards;
 }
+
 .circle-container {
   position: relative;
   display: grid;
@@ -99,6 +118,17 @@ ul {
 .circle-link {
   width: 225px;
   height: 225px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+.gh {
+  animation-delay: .2s;
+}
+.ln {
+  animation-delay: .5s;
+}
+.itch {
+  animation-delay: .8s;
 }
 .circle-link:nth-child(3) {
   grid-column: 2;
@@ -152,6 +182,15 @@ ul {
   display: flex;
   justify-content: center;
   min-height: 90svh;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes floatUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0px);}
 }
 
 /*Layout for ipads*/
