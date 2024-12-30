@@ -40,7 +40,7 @@
       "tags": "React+NextJS, Neon Postgres",
       "title": "YMZK Website",
       "header": "YMZK Website",
-      "details": "A personal website made for a friend.",
+      "details": "A personal website showcasing the written works of a writer made using NextJS with Neon Serverless Postgres for the database.",
       "content": "Currently a work in progress.",
       "link": ["Website","https://ymzk-blog.vercel.app/"],
       "link2": [],
