@@ -6,6 +6,8 @@ function CardEnlarged({ tags, header, details, content, link, link2, image, hand
   return(
     <section className='overlay-popup-container'>
       <article className='popup-card'>
+        <div className='close-btn-container' onClick={handlePopUp}>
+        </div>
         <section className='popup-body'>
           <span>{tags}</span>
           <h1>{header}</h1>

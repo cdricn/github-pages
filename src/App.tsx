@@ -39,7 +39,7 @@ function App() {
             <div className='home-info-introduction'>
               <p>
                 I'm an aspiring software developer residing
-                in the Philippines. I like to websites.
+                in the Philippines. I like creating websites.
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ function App() {
       <nav className='section-menu'>
         <ul className='menu'>
           <li onClick={() => handleSelected('Projects')}>Projects</li>
-          <li onClick={() => handleSelected('Designs')}>Designs</li>
+          <li onClick={() => handleSelected('Designs')}>Websites</li>
           <li onClick={scrollToTop}>Top</li>
         </ul>
       </nav>

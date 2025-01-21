@@ -19,6 +19,7 @@ ul {
 }
 .section-home {
   height: 100svh;
+  min-height: 915px;
   overflow: hidden;
 }
 .home-wrapper {
@@ -46,13 +47,13 @@ ul {
   content: '';
   margin: auto;
   position: absolute;
-  top: 0;
+  top: 13px;
   bottom: 0;
-  left: -665%;
+  left: -650%;
   height: 5px;
-  width: 650%;
+  width: 635%;
   background-color: var(--color-divider);
-  animation: fadeIn 1s ease-in forwards;
+  animation: growRight .7s forwards ease-out;
 }
 .head-1, .head-2, .head-3 {
   opacity: 0;
@@ -91,17 +92,17 @@ ul {
 }
 .home-links-container::before {
   right: 6.8rem;
-  bottom: 1rem;
-  height: 500%;
+  top: -330%;
+  height: 400%;
   width: 5px;
-  animation: fadeIn 1s ease-in forwards;
+  animation: growDown .7s forwards ease-out;
 }
 .home-links-container::after {
   top: 7rem;
-  left: 1rem;
+  right: -650%;
   height: 5px;
   width: 850%;
-  animation: fadeIn 1s ease-in forwards;
+  animation: growLeft .7s forwards ease-out;
 }
 
 .circle-container {
@@ -112,23 +113,24 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  overflow: hidden;
   z-index: 1;
 }
 .circle-link {
   width: 225px;
   height: 225px;
   opacity: 0;
-  animation: fadeIn 1.5s forwards;
 }
 .gh {
-  animation-delay: .2s;
+  animation: floatLeft .8s forwards;
+  animation-delay: .3s;
 }
 .ln {
-  animation-delay: .5s;
+  animation: floatDown .8s forwards;
+  animation-delay: .4s;
 }
 .itch {
-  animation-delay: .8s;
+  animation: floatDown .8s forwards;
+  animation-delay: .3s;
 }
 .circle-link:nth-child(3) {
   grid-column: 2;
@@ -184,15 +186,6 @@ ul {
   min-height: 90svh;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-@keyframes floatUp {
-  from {opacity: 0; transform: translateY(30px);}
-  to {opacity: 1; transform: translateY(0px);}
-}
-
 /*Layout for ipads*/
 @media (width < 1100px) {
   .home-info-header > h1 {
@@ -240,6 +233,17 @@ ul {
     width: 80%;
     gap: clamp(32px, calc(2rem + ((1vw - 6px) * 25.6)), 160px);;
   }
+
+  .gh {
+    animation: floatDown .8s forwards;
+    animation-delay: .7s;
+  }
+  .ln {
+    animation-delay: .5s;
+  }
+  .itch {
+    animation-delay: .3s;
+  }
 }
 
 /*Layout for phones*/
@@ -284,4 +288,55 @@ ul {
   .menu > li {
     font-size: var(--fs-vs);
   }
+
+  .gh {
+    animation: floatLeftTiny .8s forwards;
+    animation-delay: .7s;
+  }
+  .ln {
+    animation: floatLeftTiny .8s forwards;
+    animation-delay: .5s;
+  }
+  .itch {
+    animation: floatLeftTiny .8s forwards;
+    animation-delay: .3s;
+  }
+  .home-links-container::after {
+    animation: growLeftTiny .7s forwards ease-out;
+  }
+}
+
+
+@keyframes floatLeft {
+  from {opacity: 0; transform: translateX(70px)}
+  to {opacity: 1; transform: translateX(0px)}
+}
+@keyframes floatLeftTiny {
+  from {opacity: 0; transform: translateX(30px)}
+  to {opacity: 1; transform: translateX(0px)}
+}
+@keyframes floatDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+@keyframes floatUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes growRight {
+  from {opacity: 0; width: 0px;}
+  to {opacity: 1; width: 635%}
+}
+@keyframes growLeft {
+  from {opacity: 0; width: 0px;}
+  to {opacity: 1; width: 730%}
+}
+@keyframes growLeftTiny {
+  from {opacity: 0; width: 0px;}
+  to {opacity: 1; width: 780%}
+}
+@keyframes growDown {
+  from {opacity: 0; height: 0px;}
+  to {opacity: 1; height: 420%}
 }

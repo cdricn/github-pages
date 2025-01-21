@@ -36,35 +36,13 @@
   ],
   "designs": [
     {
-      "id": "web_04",
+      "id": "web_02",
       "tags": "React+NextJS, Neon Postgres",
       "title": "YMZK Website",
       "header": "YMZK Website",
       "details": "A personal website made using NextJS with Neon Serverless Postgres for the database.",
       "content": "Made to showcase the written works of a writer/author. Currently a work in progress.",
       "link": ["Website","https://ymzk-blog.vercel.app/"],
-      "link2": [],
-      "image": ""
-    },
-    {
-      "id": "web_03",
-      "tags": "React+Vite, CSS",
-      "title": "Travel Site Web Design",
-      "header": "Travel Site Web Design",
-      "details": "A web design of a travel webpage to practice complex ui/ux.",
-      "content": "",
-      "link": ["Github","https://github.com/cdricn/WebDesign-Travel"],
-      "link2": [],
-      "image": ""
-    },
-    {
-      "id": "web_02",
-      "tags": "React+Vite, CSS",
-      "title": "Vtuber Page Web Design",
-      "header": "Vtuber Page Web Design",
-      "details": "A redesign of a vtuber's website focusing on responsive UI/UX as practice.",
-      "content": "Made mostly using CSS.",
-      "link": ["Github","https://github.com/cdricn/WebDesign-PeoProfile"],
       "link2": [],
       "image": ""
     },
