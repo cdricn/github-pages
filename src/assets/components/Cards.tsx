@@ -2,7 +2,7 @@ import './Cards.css'
 import data from '../../pagecontent.json'
 import CardEnlarged from './CardsEnlarged';
 import { useState } from 'react';
-import { CardProps, CategoryProps, DataProps, DataPropsArr } from './interface';
+import { CardProps, CategoryProps, DataProps, DataPropsArr } from '../lib/interface';
 
 function CardsRenderer({data} : DataPropsArr) {
   const [selectedItem, setSelectedItem] = useState({

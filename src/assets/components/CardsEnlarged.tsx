@@ -1,5 +1,5 @@
 import './CardsEnlarged.css'
-import { DataPropsWithState } from './interface'
+import { DataPropsWithState } from '../lib/interface'
 
 function CardEnlarged({ tags, header, details, content, link, link2, image, handlePopUp } : DataPropsWithState) {
 

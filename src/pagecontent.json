@@ -1,61 +1,28 @@
 {
   "projects": [
     {
-      "id": "prj_03",
-      "tags": "Renpy",
-      "title": "All Hollow's Eve VN",
-      "header": "All Hollow's Eve VN",
-      "details": "A 1-bit horror visual novel made using RenPy for a halloween themed game jam.",
-      "content": "Credits to \"Leigh\" for the story, and \"Dump\" for helping with the art and music.",
-      "link": ["Github","https://github.com/cdricn/AllHollowsEveVN"],
-      "link2": ["Itch.io","https://cdricn.itch.io/all-hollows-eve"],
-      "image": ""
-    },
-    {
-      "id": "prj_02",
-      "tags": "Selenium, C#",
-      "title": "PIXIV Downloader",
-      "header": "PIXIV Image Downloader",
-      "details": "A scraping tool to download user artworks on the PIXIV Website using C# and Selenium.",
-      "content": "Currently a work in progress.",
-      "link": ["Github","https://github.com/cdricn/PixivDownloader"],
-      "link2": [],
-      "image": ""
-    },
-    {
-      "id": "prj_01",
-      "tags": "YOLOv4",
-      "title": "Research Paper",
-      "header": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
-      "details": "Our thesis paper studying the effectiveness of real-time object detection for garbage segregation.",
-      "content": "Used YOLOv4 for the Object Detection model and Python for the UI.",
-      "link": ["Google Drive","https://drive.google.com/file/d/1jSo16taPl52YO2TOMGLsT8KWNxKRJU3-/view?usp=sharing"],
-      "link2": [],
-      "image": ""
-    }
-  ],
-  "designs": [
-    {
-      "id": "web_02",
       "tags": "React+NextJS, Neon Postgres",
       "title": "YMZK Website",
-      "header": "YMZK Website",
-      "details": "A personal website made using NextJS with Neon Serverless Postgres for the database.",
-      "content": "Made to showcase the written works of a writer/author. Currently a work in progress.",
-      "link": ["Website","https://ymzk-blog.vercel.app/"],
-      "link2": [],
-      "image": ""
+      "details": "A portfolio website made using NextJS with Neon Serverless Postgres for the database.",
+      "link": "https://ymzk-blog.vercel.app/"
     },
     {
-      "id": "web_01",
       "tags": "React+Vite, TS",
       "title": "GitHub Pages Repository",
-      "header": "GitHub Pages Repository",
-      "details": "The GitHub repository for this website.",
-      "content": "Created using React + Vite with Typescript.",
-      "link": ["Github","https://github.com/cdricn/webpage-deploy"],
-      "link2": [],
-      "image": ""
+      "details": "The GitHub repository for this website. Created using React + Vite with Typescript.",
+      "link": "https://github.com/cdricn/webpage-deploy"
+    },
+    {
+      "tags": "Renpy",
+      "title": "All Hollow's Eve VN",
+      "details": "A 1-bit horror visual novel made using RenPy for a halloween themed game jam.",
+      "link": "https://cdricn.itch.io/all-hollows-eve"
+    },
+    {
+      "tags": "YOLOv4",
+      "title": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
+      "details": "My thesis paper studying the effectiveness of real-time object detection for garbage segregation.",
+      "link": "https://drive.google.com/file/d/1jSo16taPl52YO2TOMGLsT8KWNxKRJU3-/view?usp=sharing"
     }
   ]
 }
