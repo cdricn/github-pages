@@ -1,6 +1,6 @@
 {
   "name": "cdricn-gh-page",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://cdricn.github.io/gh-pages",
   "type": "module",
