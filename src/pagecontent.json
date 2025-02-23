@@ -4,7 +4,7 @@
       "tags": "React+NextJS, Neon Postgres",
       "title": "YMZK Website",
       "details": "A portfolio website made using NextJS with Neon Serverless Postgres for the database.",
-      "link": "https://ymzk-blog.vercel.app/"
+      "link": "https://ymzk.vercel.app/"
     },
     {
       "tags": "React+Vite, TS",
