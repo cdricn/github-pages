@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  min-height: 1110px;
+  height: fit-content;
   background-color: var(--color-dark);
 }
 
@@ -11,7 +11,7 @@
   max-width: 95%;
 }
 .section-header {
-  margin-top: 280px;
+  margin-top: 200px;
   font-weight: bold;
   font-size: var(--fs-section-header);
   color: var(--color-almond);
@@ -19,5 +19,24 @@
 
 .projects-container {
   margin-top: 50px;
+  margin-bottom: 200px;
   position: relative;
+}
+
+@media (width < 800px) { 
+  .section-header {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+@media (width < 600px) { 
+  .section {
+    height: fit-content;
+  }
+  .section-header {
+    font-size: var(--fs-section-header-mobile);
+  }
+  .projects-container {
+    margin-top: 25px;
+  }  
 }

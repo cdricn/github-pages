@@ -3,18 +3,18 @@
   border: 10px solid var(--color-taupe);
   border-radius: 300px;
   display: block;
-  width: 300px;
-  height: 300px;
-  min-width: 300px;
-  min-height: 300px;
+  width: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
+  height: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
+  min-width: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
+  min-height: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
   background-color: var(--color-mauve);
   opacity: 0;
   animation: 1s fadeIn forwards;
 }
 
 .empty {
-  width: 300px;
-  height: 300px;
+  width: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
+  height: clamp(150px, calc(18.75rem + ((1vw - 13px) * 25)), 300px);
   border-radius: 300px;
 }
 
@@ -30,5 +30,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (width < 801px) {
+  .link-circle-container {
+    width: clamp(100px, calc(9.375rem + ((1vw - 8px) * 10)), 150px);;
+    height: clamp(100px, calc(9.375rem + ((1vw - 8px) * 10)), 150px);;
+    min-width: clamp(100px, calc(9.375rem + ((1vw - 8px) * 10)), 150px);;
+    min-height: clamp(100px, calc(9.375rem + ((1vw - 8px) * 10)), 150px);;
   }
 }

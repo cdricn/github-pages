@@ -19,10 +19,15 @@
   --color-reef: #dca27a;
 
   --fs-complement-text: 200px;
-  --fs-title: 100px;
-  --fs-section-header: 64px;
+  --fs-title: 96px;
+  --fs-title-mobile: 54px;
+  --fs-titleToMobile: clamp(54px, calc(6rem + ((1vw - 13px) * 4.2)), 96px);
+  --fs-section-header: 48px;
+  --fs-section-header-mobile: 36px;
   --fs-body-header: 24px;
+  --fs-body-headerToBase: clamp(16px, calc(1.5rem + ((1vw - 8px) * 1.6)), 24px);
   --fs-body: 20px;
+  --fs-bodyToBase: clamp(16px, calc(1.25rem + ((1vw - 13px) * 0.4)), 20px);
   --fs-base: 16px;
 
   --ff-normal: 'Inter';
