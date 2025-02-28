@@ -2,7 +2,7 @@
   "projects": [
     {
       "tags": "React+NextJS, Neon Postgres",
-      "title": "YMZK Website",
+      "title": "YMZK Portfolio Website",
       "details": "A portfolio website made using NextJS with Neon Serverless Postgres for the database.",
       "link": "https://ymzk.vercel.app/"
     },
