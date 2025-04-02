@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(40px, calc(4.6875rem + ((1vw - 19.2px) * 2.193)), 75px);;
+  gap: clamp(40px, calc(4.6875rem + ((1vw - 19.2px) * 2.193)), 75px);
   height: 100%;
 }
 
@@ -24,15 +24,24 @@
 .links {
   position: relative;
   display: flex;
-  gap: clamp(45px, calc(6.25rem + ((1vw - 19.2px) * 3.4461)), 100px);;
+  gap: clamp(45px, calc(6.25rem + ((1vw - 19.2px) * 3.4461)), 100px);
+  text-decoration: none;
 }
+
 .link-container {
-  position: relative;
+  border: 3px solid var(--color-white);
   border-radius: 50%;
-  height: clamp(45px, calc(5.625rem + ((1vw - 19.2px) * 2.8195)), 90px);;
-  width: clamp(45px, calc(5.625rem + ((1vw - 19.2px) * 2.8195)), 90px);;
-  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(45px, calc(5.625rem + ((1vw - 19.2px) * 2.8195)), 90px);
+  width: clamp(45px, calc(5.625rem + ((1vw - 19.2px) * 2.8195)), 90px);
+  overflow: hidden;
 }
 
-
-/*flex: 0 0 calc(33.33% - 16px);*/
+.link-icon {
+  position: relative;
+  height: 68%;
+  width: 68%;
+}

@@ -16,7 +16,9 @@
   --color-white: #FFFFFF;
   --color-purple: #8C7BE9;
   --color-cyan: #7BE2E9;
+  --color-deepblue: #206EB7; 
   --color-red: #E97B7B;
+  --color-deepred:#DA5656;
   --color-green: #81E97B;
 
   --fs-main-header: clamp(64px, calc(8rem + ((1vw - 19.2px) * 4.01)), 128px);
