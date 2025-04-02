@@ -1,0 +1,29 @@
+.section {
+  padding: 10px;
+  position: relative;
+  height: 911px;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about {
+  display: block;
+  font-weight: medium;
+  font-size: var(--fs-main-body);
+  width: 60%;
+  max-width: 1920px;
+  min-width: 300px;
+  line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .section {
+    height: 511px;
+  }
+}
