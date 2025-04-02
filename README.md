@@ -5,5 +5,5 @@ Github Webpage: <br />
 https://cdricn.github.io/github-pages/
 
 ## How to build
-Clone repo, do ``npm install`` and run ``npm run dev``
+Clone the repo, run ``npm install``, then run ``npm run dev``
 
