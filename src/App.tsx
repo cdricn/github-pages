@@ -23,7 +23,7 @@ export default function App() {
       <Divider color={'--color-green'}/>
       <ProjectSection 
         header='Others'
-        subtitle='A collection of miscellaneous projects I’ve created.'
+        subtitle='A collection of miscellaneous projects I’ve created or was part in.'
         items={othersData}
       />
       <Divider color={'--color-gray'}/>
