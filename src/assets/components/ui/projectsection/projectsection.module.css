@@ -39,6 +39,9 @@
 }
 
 @media (width < 1100px) { 
+  .section {
+    margin-bottom: 140px;
+  }
   .section-header {
     margin-top: 100px;
   }
