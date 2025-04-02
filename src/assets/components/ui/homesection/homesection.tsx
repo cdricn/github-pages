@@ -8,7 +8,7 @@ export default function HomeSection() {
     <section className={styles['section']}>
       <div className={styles['home-header-container']}>
         <h1 className={styles['header']}>
-          Hello, I'm Adrian
+          Hello, I'm Adrian!
         </h1>
         <div className={styles['links']}>
           <a href='https://github.com/cdricn' 
