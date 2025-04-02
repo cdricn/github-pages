@@ -1,16 +1,31 @@
 import './fonts.css';
-import HomeSection from './assets/components/homesection/homesection';
-import ProjectSection from './assets/components/projectsection/projectsection';
+import HomeSection from './assets/components/ui/homesection/homesection';
+import AboutSection from './assets/components/ui/aboutsection/aboutsection';
+import ProjectSection from './assets/components/ui/projectsection/projectsection';
+import Divider from './assets/components/ui/divider';
+import projectsData from './projects.json'
+import othersData from './others.json'
 
 
-function App() {
+export default function App() {
 
   return (
     <>
       <HomeSection />
-      <ProjectSection />
+      <Divider color={'--color-purple'}/>
+      <AboutSection />
+      <Divider color={'--color-cyan'}/>
+      <ProjectSection 
+        header='Projects'
+        subtitle='Front-end development projects.'
+        items={projectsData}
+      />
+      <Divider color={'--color-green'}/>
+      <ProjectSection 
+        header='Others'
+        subtitle='A collection of miscellaneous projects I’ve done.'
+        items={othersData}
+      />
     </>
   );
 }
-
-export default App
