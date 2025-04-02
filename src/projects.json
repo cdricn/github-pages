@@ -4,14 +4,14 @@
       "title": "Yamazakura Portfolio Website",
       "details": "A dynamic portfolio website deployed on Vercel, featuring serverless database integration to showcase a writer's works. This is the first full stack website that I've developed.",
       "link": "https://ymzk.vercel.app/",
-      "image": "/ymzkr_thumbnail.png"
+      "image": "ymzkr_thumbnail.png"
     },
     {
       "tags": "React + Typescript, Vite, CSS",
       "title": "GitHub Pages Repository",
       "details": "The GitHub repository for this website.",
       "link": "https://github.com/cdricn/webpage-deploy",
-      "image": ""
+      "image": "ghpages_thumbnail.png"
     }
 ]
 
