@@ -1,5 +1,4 @@
 import styles from './aboutsection.module.css'
-import { animDelay } from '../../../lib/utils';
 
 export default function AboutSection() {
 
