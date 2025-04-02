@@ -26,6 +26,7 @@ export default function App() {
         subtitle='A collection of miscellaneous projects I’ve done.'
         items={othersData}
       />
+      <Divider color={'--color-gray'}/>
     </>
   );
 }
