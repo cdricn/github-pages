@@ -3,6 +3,7 @@ import HomeSection from './assets/components/ui/homesection/homesection';
 import AboutSection from './assets/components/ui/aboutsection/aboutsection';
 import ProjectSection from './assets/components/ui/projectsection/projectsection';
 import Divider from './assets/components/ui/divider';
+import Navbar from './assets/components/ui/navbar/navbar';
 import projectsData from './projects.json'
 import othersData from './others.json'
 
@@ -11,7 +12,7 @@ export default function App() {
 
   return (
     <>
-      
+      <Navbar />
       <HomeSection />
       <Divider color={'--color-purple'}/>
       <AboutSection />

@@ -5,6 +5,7 @@
   color-scheme: light dark;
   color: var(--color-white);
   background: var(--color-dark);
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
