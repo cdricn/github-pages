@@ -8,6 +8,7 @@ export interface DataProps {
 }
 
 export interface ProjectSectionProps {
+  id: string;
   header: string;
   subtitle: string;
   items: DataProps[];

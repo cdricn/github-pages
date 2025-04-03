@@ -3,13 +3,14 @@ import ProjectCard from './projectcard';
 import { ProjectSectionProps } from '../../../lib/interface';
 
 export default function ProjectSection({
+  id,
   header,
   subtitle,
   items
 } : ProjectSectionProps) {
 
   return (
-    <section className={styles['section']}>
+    <section id={id} className={styles['section']}>
       <div className={styles['section-header']}>
         <h2>{header}</h2>
         <p>

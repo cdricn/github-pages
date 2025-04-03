@@ -5,7 +5,7 @@ export default function AboutSection() {
   // make every word slide up on page view
 
   return(
-    <section className={styles['section']}>
+    <section id='about' className={styles['section']}>
       <div className={styles['about-container']}>
         <p className={styles['about']}>
         I'm a computer science graduate aspiring to be a 

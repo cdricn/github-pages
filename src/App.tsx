@@ -11,17 +11,20 @@ export default function App() {
 
   return (
     <>
+      
       <HomeSection />
       <Divider color={'--color-purple'}/>
       <AboutSection />
       <Divider color={'--color-cyan'}/>
       <ProjectSection 
+        id='project'
         header='Projects'
         subtitle='Front-end development projects.'
         items={projectsData}
       />
       <Divider color={'--color-green'}/>
       <ProjectSection 
+        id='others'
         header='Others'
         subtitle='A collection of miscellaneous projects I’ve created or was part in.'
         items={othersData}

@@ -5,7 +5,7 @@ import { SiItchdotio, SiGithub, SiLinkedin } from "react-icons/si";
 export default function HomeSection() {
 
   return(
-    <section className={styles['section']}>
+    <section id='home' className={styles['section']}>
       <div className={styles['home-header-container']}>
         <h1 className={styles['header']}>
           Hello, I'm Adrian!
