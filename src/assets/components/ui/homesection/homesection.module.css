@@ -15,10 +15,14 @@
 }
 
 .header {
+  position: relative;
+  display: block;
   text-align: center;
   font-weight: bold;
   font-size: var(--fs-main-header);
   line-height: 120%;
+  max-width: 60%;
+  min-width: 300px;
 }
 
 .links {
