@@ -21,6 +21,7 @@
   --color-red: #E97B7B;
   --color-deepred:#DA5656;
   --color-green: #81E97B;
+  --color-yellow: #E9E07B;
 
   --fs-main-header: clamp(64px, calc(8rem + ((1vw - 19.2px) * 4.01)), 128px);
   /*36px*/
