@@ -23,12 +23,11 @@
   --color-green: #81E97B;
   --color-yellow: #E9E07B;
 
-  --fs-main-header: clamp(64px, calc(8rem + ((1vw - 19.2px) * 4.01)), 128px);
-  /*36px*/
-  --fs-main-body: clamp(24px, calc(3.25rem + ((1vw - 19.2px) * 1.7544)), 52px);
-  --fs-section-header: clamp(48px, calc(6rem + ((1vw - 19.2px) * 3.0075)), 96px);
-  --fs-body-header: clamp(18px, calc(1.5rem + ((1vw - 19.2px) * 0.3759)), 24px);
-  --fs-body: clamp(16px, calc(1.25rem + ((1vw - 19.2px) * 0.2506)), 20px);
+  --bg-divider: var(--color-white);
+  
+  --fs-heading: 32px;
+  --fs-heading-card: 24px;
+  --fs-body: 20px;
   --fs-complement: 16px; 
 
   --ff-normal: 'Inter';
