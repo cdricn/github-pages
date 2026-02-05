@@ -25,10 +25,10 @@
 
   --bg-divider: var(--color-white);
   
-  --fs-heading: 32px;
-  --fs-heading-card: 24px;
-  --fs-body: 20px;
-  --fs-complement: 16px; 
+  --fs-heading: 1.5rem; /*24px*/
+  --fs-heading-card: 1.25rem; /*20px*/
+  --fs-body: 1rem; /*16px*/
+  --fs-complement: .875rem; /*14px*/
 
   --ff-normal: 'Inter';
   --ff-italic: 'InterMediumItalic';
@@ -48,6 +48,11 @@
 body {
   min-height: 100vh;
   overflow: auto;
+}
+
+p {
+  font-size: var(--fs-body);
+  font-weight: 300;
 }
 
 img, picture, svg, video {

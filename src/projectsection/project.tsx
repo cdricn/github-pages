@@ -14,6 +14,7 @@ export default function Project() {
           title = {item.title}
           details = {item.details}
           link = {item.link}
+          github_link = {item.github_link}
           index = {index}
           image = {item.image}
         />
@@ -23,7 +24,6 @@ export default function Project() {
 
   return (
     <section className={styles['section']}>
-      <div className={styles['wrapper']}>
         <div className={styles['projects-container']}>
           <div className={styles['header-container']}>
             <h2>Main Projects</h2>
@@ -43,7 +43,6 @@ export default function Project() {
             {mapItems(data.misc_projects)}
           </div>
         </div>
-      </div>
     </section>
   );
 }

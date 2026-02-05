@@ -7,25 +7,38 @@
 
 .card-content {
   position: relative;
-  width: 430px;
-  max-width: 100%;
+  width: 90%;
+  max-width: 430px;
 }
 
-.card-title {
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-header > a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+.github-logo {
+  font-size: var(--fs-heading-card);
+}
+.card-header > h3 {
+  display: inline-block;
   font-size: var(--fs-body-header);
   font-weight: bold;
+}
+
+.card-tags {
+  font-size: var(--fs-complement);
+  font-weight: lighter;
 }
 
 .card-description {
   margin-top: 10px;
   font-size: var(--fs-body);
 } 
-
-.card-tags {
-  margin-top: 10px;
-  font-size: var(--fs-complement);
-  font-weight: lighter;
-}
 
 .card-number {
   position: absolute;

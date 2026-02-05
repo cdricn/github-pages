@@ -3,6 +3,7 @@ export interface ProjectEntry {
   title: string;
   details: string;
   link: string;
+  github_link: string;
   image: string;
 }
 
