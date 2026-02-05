@@ -1,13 +1,28 @@
 {
   "main_projects": [
     {
-      "tags": "React + Typescript, Next.js, Neon PostgreSQL, CSS",
+      "tags": "React + Typescript, Next.js, SWR",
+      "title": "Findateam",
+      "details": "An aggregator website to find teams or members much easier by filtering posts from popular itch.io game jams.",
+      "link": "https://findateam.vercel.app/",
+      "github_link": "https://github.com/cdricn/finda",
+      "image": ""
+    },
+    {
+      "tags": "Cheerio, Express, Axios",
+      "title": "itch Community Scraper API",
+      "details": "A custom scraper API that collects game jams and filters recruitment posts from itch.io community forums made for findateam.",
+      "link": "",
+      "github_link": "https://github.com/cdricn/itch-jamcommunity-api",
+      "image": ""
+    },
+    {
+      "tags": "React + Typescript, Next.js, Neon PostgreSQL",
       "title": "Yamazakura Portfolio Website",
       "details": "A dynamic portfolio website deployed on Vercel, featuring serverless database integration to showcase a writer's works. This is the first full stack website that I've developed.",
       "link": "https://ymzk.vercel.app/",
-      "image": "ymzkr_thumbnail.png",
-      "test2": [{"image":"test"}] ,
-      "test": {"image": "test"}
+      "github_link": "",
+      "image": "ymzkr_thumbnail.png"
     }
   ],
   "misc_projects": [
@@ -16,13 +31,15 @@
       "title": "All Hallow's Eve",
       "details": "A 1-bit horror visual novel made using RenPy in participation for a halloween themed game jam.",
       "link": "https://cdricn.itch.io/all-hollows-eve",
+      "github_link": "https://github.com/cdricn/AllHollowsEveVN",
       "image": "halloweve_thumbnail.png"
     },
     {
-      "tags": "React + Typescript, Vite, CSS",
+      "tags": "React + Typescript, Vite",
       "title": "GitHub Pages Repository",
       "details": "The GitHub repository for this website.",
-      "link": "https://github.com/cdricn/webpage-deploy",
+      "link": "https://cdricn.github.io/github-pages/",
+      "github_link": "https://github.com/cdricn/github-pages",
       "image": "ghpages_thumbnail.png"
     },
     {
@@ -30,6 +47,7 @@
       "title": "Research Paper: Detecting Biodegradable Materials in Waste Piles Using YOLO Object Detection Model",
       "details": "My thesis paper studying the effectiveness of real-time object detection for garbage segregation.",
       "link": "https://drive.google.com/file/d/1jSo16taPl52YO2TOMGLsT8KWNxKRJU3-/view?usp=sharing",
+      "github_link": "",
       "image": "thesis_thumbnail.png"
     }
   ]
