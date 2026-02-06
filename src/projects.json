@@ -10,7 +10,7 @@
     },
     {
       "tags": "Cheerio, Express, Axios",
-      "title": "itch Community Scraper API",
+      "title": "itch.io Community Scraper API",
       "details": "A custom scraper API that collects game jams and filters recruitment posts from itch.io community forums made for findateam.",
       "link": "",
       "github_link": "https://github.com/cdricn/itch-jamcommunity-api",
@@ -37,7 +37,7 @@
     {
       "tags": "React + Typescript, Vite",
       "title": "GitHub Pages Repository",
-      "details": "The GitHub repository for this website.",
+      "details": "The GitHub repository for my website.",
       "link": "https://cdricn.github.io/github-pages/",
       "github_link": "https://github.com/cdricn/github-pages",
       "image": "ghpages_thumbnail.png"
