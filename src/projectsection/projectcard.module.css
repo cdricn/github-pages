@@ -13,7 +13,7 @@
 
 .card-header {
   display: inline-block;
-  font-size: var(--fs-body-header);
+  font-size: var(--fs-text);
   font-weight: bold;
 }
 .card-header > a {
@@ -28,21 +28,22 @@
 }
 
 .card-tags {
-  font-size: var(--fs-complement);
+  font-size: var(--fs-card-tags);
   font-weight: lighter;
 }
 
 .card-description {
   margin-top: 10px;
-  font-size: var(--fs-body);
 } 
 
 .card-number {
   position: absolute;
-  top: 3px;
-  left: -70px;
-  font-size: var(--fs-complement);
+  top: 5px;
+  left: -50px;
+  color: var(--color-text-complementary);
+  font-size: var(--fs-text-complementary);
   font-weight: lighter;
+  user-select: none;
 }
 
 .card-image {
@@ -81,7 +82,6 @@
     margin-top: 15px;
   }
   .card-number {
-    top: -30px;
-    left: 0;
+    left: -20px;
   }
 }

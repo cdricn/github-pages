@@ -19,11 +19,12 @@ export default function ProjectCard({tags, title, details, link, github_link, in
       <div className={styles['card-content']}>
         <h3 className={styles['card-header']}>
           {title}
+          {link ? <a href={link}><SlLink /></a>: <></>}
           {
-            link ? <a href={link}><SlLink /></a>: <></>
-          }
-          {
-            github_link ? <a href={github_link} className={styles['github-logo']}><DiGithubBadge /></a>: <></>
+            github_link ? 
+              <a href={github_link} className={styles['github-logo']}>
+                <DiGithubBadge />
+              </a> : <></>
           }
         </h3>
         <div className={styles['card-tags']}>
