@@ -1,0 +1,47 @@
+.section {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.section > div {
+  border: 1px solid var(--color-logo-border);
+  border-radius: 2px;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(50px, 4vw, 70px);
+  height: clamp(50px, 4vw, 70px);
+  font-size: 60px;
+}
+
+.hover-text {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  visibility: hidden;
+}
+
+.logo-html {
+  color: var(--color-html);
+}
+.logo-html:hover > span {
+  visibility: visible;
+}
+.logo-js { 
+  color: var(--color-js);
+}
+.logo-css { 
+  color: var(--color-css);
+}
+.logo-ts { 
+  color: var(--color-ts);
+}
+.logo-react {
+  color: var(--color-react);
+}
