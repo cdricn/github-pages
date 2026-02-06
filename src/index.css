@@ -13,7 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-dark: #1C1C20;
-  --color-gray: #2c2c30;
+  --color-lightgray-100: #c7c7c7;
+  --color-lightgray-200: #b3b3b3;
+  --color-lightgray-300: #9b9b9b;
+  --color-gray: #bdbaba;
+  --color-gray-100: #5a5a5e;
+  --color-gray-200: #39393b;
   --color-white: #FFFFFF;
   --color-purple: #8C7BE9;
   --color-cyan: #7BE2E9;
@@ -22,13 +27,22 @@
   --color-deepred:#DA5656;
   --color-green: #81E97B;
   --color-yellow: #E9E07B;
+  --color-html: #e76e3e;
+  --color-js: #E9E07B;
+  --color-css: #459bec;
+  --color-ts: #206EB7;
+  --color-nextjs: #FFFFFF;
+  --color-react: #42dbf0;
 
-  --bg-divider: var(--color-white);
+  --color-logo-border: var(--color-gray-100);
+  --color-text-complementary: var(--color-lightgray-200);
+  --bg-divider: var(--color-gray-200);
   
   --fs-heading: 1.5rem; /*24px*/
-  --fs-heading-card: 1.25rem; /*20px*/
-  --fs-body: 1rem; /*16px*/
-  --fs-complement: .875rem; /*14px*/
+  --fs-section-header: 1rem; /*20px*/
+  --fs-text: .875rem; /*14px*/
+  --fs-card-tags: .75rem; /*12px*/
+  --fs-text-complementary: .75rem; /*12px*/
 
   --ff-normal: 'Inter';
   --ff-italic: 'InterMediumItalic';
@@ -50,8 +64,13 @@ body {
   overflow: auto;
 }
 
+h1, h2 {
+  font-size: var(--fs-section-header);
+  font-weight: 600;
+}
+
 p {
-  font-size: var(--fs-body);
+  font-size: var(--fs-text);
   font-weight: 300;
 }
 
