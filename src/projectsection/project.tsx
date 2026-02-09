@@ -24,17 +24,20 @@ export default function Project() {
 
   return (
     <section className={styles['section']}>
-      <div className={styles['projects-container']}>
+      <div className={styles['section-container']}>
+        <div className={styles['section-title']}>
+          <h1>Projects</h1>
+        </div>
         <div className={styles['project-info']}>
-          <h2>Main Projects</h2>
-          <p>Web development projects I’ve created.</p>
+          <h2>Web development</h2>
+          <p>Projects about front-end web development.</p>
         </div>
         <div className={styles['project-entries']}>
           {mapItems(data.main_projects)}
         </div>
         <div className={styles['project-info']}>
-          <h2>Other Projects</h2>
-          <p>Miscellaneous projects that I’ve created or participated in that are unrelated to web development.</p>
+          <h2>Miscellaneous</h2>
+          <p>Projects that I’ve created or participated in that are unrelated to web development.</p>
         </div>
         <div className={styles['project-entries']}>
           {mapItems(data.misc_projects)}
