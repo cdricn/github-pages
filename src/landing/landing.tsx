@@ -9,7 +9,8 @@ export default function Landing() {
   }
 
   return (
-    <div className={styles['test']}>
-    </div>
+    <section className={styles['section']}>
+      ssss
+    </section>
   )
 }

@@ -1,9 +1,13 @@
-.test {
-  width: 100px;
-  height: 100px;
-  background-color: green;
+.section {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.test:hover {
-  background-color: beige;
+.landing-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
 }
