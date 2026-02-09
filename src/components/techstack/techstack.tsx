@@ -1,5 +1,6 @@
 import styles from './techstack.module.css'
-import { SiNextdotjs, SiReact, SiTypescript, SiJavascript, SiCss3, SiHtml5 } from "react-icons/si";
+import { SiNextdotjs, SiReact, SiTypescript, SiJavascript, SiCss3, SiHtml5, SiSwr } from "react-icons/si";
+import { BsFiletypeSql } from "react-icons/bs";
 
 export default function Techstack() {
 
@@ -32,6 +33,14 @@ export default function Techstack() {
           <div className={styles['logo']}>
             <div className={styles['logo-nextjs']}><SiNextdotjs /></div>
             <span className={styles['hover-text']}>NextJS</span>
+          </div>
+          <div className={styles['logo']}>
+            <div className={styles['logo-postgre']}><BsFiletypeSql /></div>
+            <span className={styles['hover-text']}>SQL</span>
+          </div>
+          <div className={styles['logo']}>
+            <div className={styles['logo-swr']}><SiSwr /></div>
+            <span className={styles['hover-text']}>SWR</span>
           </div>
         </div>
 
