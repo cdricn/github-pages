@@ -1,23 +1,41 @@
 .section {
-  padding: 10px;
+  margin: 0px 20px 40px 20px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3vw;
 }
 
-.section > div {
-  border: 1px solid var(--color-logo-border);
-  border-radius: 2px;
-  padding: 5px;
+.section-container {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.section-title {
+  grid-column: 5 / 11;
+  text-align: center;
+}
+
+.section-tech {
+  grid-column: 5 / 11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section-tech > div {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  border: 1px solid var(--color-logo-border);
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 60px;
   width: clamp(50px, 4vw, 70px);
   height: clamp(50px, 4vw, 70px);
-  font-size: 60px;
 }
 
 .hover-text {
@@ -30,9 +48,6 @@
 .logo-html {
   color: var(--color-html);
 }
-.logo-html:hover > span {
-  visibility: visible;
-}
 .logo-js { 
   color: var(--color-js);
 }
@@ -44,4 +59,13 @@
 }
 .logo-react {
   color: var(--color-react);
+}
+
+@media (width < 900px) {
+  .section-title {
+    grid-column: 1 / 13;
+  }
+  .section-tech {
+    grid-column: 1 / 13;
+  }
 }
