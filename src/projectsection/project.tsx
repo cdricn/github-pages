@@ -26,17 +26,17 @@ export default function Project() {
     <section className={styles['section']}>
       <div className={styles['section-container']}>
         <div className={styles['section-title']}>
-          <h1>Projects</h1>
+          <h2>Projects</h2>
         </div>
         <div className={styles['project-info']}>
-          <h2>Web development</h2>
+          <h3>Web development</h3>
           <p>Projects about front-end web development.</p>
         </div>
         <div className={styles['project-entries']}>
           {mapItems(data.main_projects)}
         </div>
         <div className={styles['project-info']}>
-          <h2>Miscellaneous</h2>
+          <h3>Miscellaneous</h3>
           <p>Projects that I’ve created or participated in that are unrelated to web development.</p>
         </div>
         <div className={styles['project-entries']}>

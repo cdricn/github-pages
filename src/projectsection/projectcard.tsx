@@ -9,10 +9,10 @@ export default function ProjectCard({tags, title, details, link, github_link, in
   
   return(
     <div className={styles['card-container']}>
-      <h3 className={styles['card-header']}>
+      <h4 className={styles['card-header']}>
         {title}
         <span className={styles['card-number']}>{cardIndex}</span>
-      </h3>
+      </h4>
       <span className={styles['card-links']}>{link ? <a href={link}><SlLink /></a>: <></>}</span>
       <span className={styles['card-links']}>
         {

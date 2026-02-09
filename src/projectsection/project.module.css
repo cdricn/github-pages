@@ -8,7 +8,7 @@
 .section-title {
   grid-column: 1 / 4;
 }
-.section-title > h1 {
+.section-title > h2 {
   transform: skew(-15deg);
   font-size: var(--fs-section-title-2);
   line-height: 80%;

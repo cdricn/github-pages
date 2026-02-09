@@ -9,7 +9,7 @@
   grid-column: 1 / 4;
   transform: skew(-15deg);
   font-size: var(--fs-section-title-2);
-  line-height: 80%;
+  line-height: 100%;
 }
 
 .section-tech {
