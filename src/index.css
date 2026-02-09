@@ -102,5 +102,5 @@ img, picture, svg, video {
   height: 100%;
   gap: 20px;
   z-index: 100;
-  opacity: 0;
+  opacity: 1;
 }
