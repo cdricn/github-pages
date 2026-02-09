@@ -1,16 +1,23 @@
-import { useState } from "react"
 import styles from "./landing.module.css"
 
 export default function Landing() {
-  const [dropdown, setDropdown] = useState(false);
-
-  function toggleDropdown() {
-    setDropdown(!dropdown);
-  }
 
   return (
     <section className={styles['section']}>
-      ssss
+      <div className={styles['section-container']}>
+        <h1 className={styles['section-title']}>
+          <span>Name</span>
+          <span>Namename</span>
+        </h1>
+        <p className={styles['section-info']}>
+          Test description nice descripton very long web development yada yada
+        </p>
+        <div className={styles['section-links']}>
+          <a href='' target='_'>Github</a>
+          <a href='' target='_'>LinkedIn</a>
+          <a href='' target='_'>itch.io</a>
+        </div>
+      </div>
     </section>
   )
 }

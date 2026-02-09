@@ -1,13 +1,36 @@
 .section {
-  padding: 10px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100svh;
 }
 
-.landing-container {
+.section-container {
   position: relative;
-  width: 100%;
-  max-width: 900px;
+  display: grid;
+  gap: 20px;
+  align-items: end;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.section-title {
+  grid-column: 1 / 5;
+  font-size: var(--fs-section-title-2);
+  line-height: 80%;
+}
+.section-title > span {
+  display: block;
+  transform: skew(-15deg);
+}
+
+.section-info {
+  grid-column: 7 / 9;
+}
+
+.section-links {
+  grid-column: 11 / 13;
+}
+.section-links > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--fs-text);
+  font-weight: 300;
 }
