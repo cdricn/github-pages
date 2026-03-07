@@ -1,36 +1,97 @@
-.section {
-  height: 100svh;
-}
-
-.section-container {
+.map-container {
+  border-top: 1px solid var(--color-lines);
+  border-right: 1px solid var(--color-lines);
   position: relative;
   display: grid;
-  gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
   align-items: end;
-  height: 100%;
-  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  height: 590px;
+  width: 100%;
 }
-
-.section-title {
-  grid-column: 1 / 5;
-  font-size: var(--fs-section-title-2);
-  line-height: 80%;
-}
-.section-title > span {
+.map-container::after {
+  content: '';
   display: block;
-  transform: skew(-15deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background: var(--color-white);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 1) 0%);
+}
+.map-container::before { 
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: clamp(120px, calc(49.375rem + ((1vw - 19.2px) * 65.6863)), 790px);
+  background-color: var(--color-white);
 }
 
-.section-info {
-  grid-column: 7 / 9;
+.header-container {
+  grid-column: 1/8;
+  position: relative;
+  bottom: -20px;
+}
+.header-container > h1 {
+  line-height: 100%;
 }
 
-.section-links {
-  grid-column: 11 / 13;
+.info-container {
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.section-links > a {
-  color: inherit;
-  text-decoration: none;
-  font-size: var(--fs-text);
-  font-weight: 300;
+.info-container > div:nth-child(2) {
+  grid-column: 7;
+}
+.info-container > div:nth-child(3) {
+  grid-column: 8;
+}
+
+.flex-item {
+  flex-grow: 0;
+}
+.flex-item:nth-child(1) {
+  flex-grow: 3;
+}
+.flex-item:nth-child(1) > p {
+  display: inline-block;
+  max-width: 500px;
+}
+
+.links-container {
+  display: flex;
+  gap: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.links > a {
+  flex-shrink: 3;
+  border-radius: 100%;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+}
+
+@media (width < 1000px) {
+  .content-wrapper {
+    grid-column: 2/12;
+  }
+  .map-container {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .header-container {
+    grid-column: 1/8;
+  }
 }
