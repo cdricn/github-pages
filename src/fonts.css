@@ -1,4 +1,23 @@
 @font-face{
+    font-family: "Inter";
+    src:local("Inter-VariableFont"),
+    url('./assets/fonts/Inter/Inter-VariableFont.ttf') 
+}
+
+@font-face{
+    font-family: "InterMedium";
+    src:local("Inter-Medium"),
+    url('./assets/fonts/Inter/Inter-Medium.ttf') 
+}
+
+@font-face{
+    font-family: "InterMediumItalic";
+    src:local("Inter-MediumItalic"),
+    url('./assets/fonts/Inter/Inter-MediumItalic.ttf') 
+}
+
+/*
+@font-face{
     font-family: "Cocogoose";
     src:local("Cocogoose-Pro-Regular-trial"),
     url('./assets/fonts/Cocogoose/Cocogoose-Pro-Regular-trial.ttf') 
@@ -27,25 +46,6 @@
     src:local("LEMONMILK-Medium"),
     url('./assets/fonts/Lemonmilk/LEMONMILK-Medium.otf') 
 }
-
-@font-face{
-    font-family: "Inter";
-    src:local("Inter-VariableFont"),
-    url('./assets/fonts/Inter/Inter-VariableFont.ttf') 
-}
-
-@font-face{
-    font-family: "InterMedium";
-    src:local("Inter-Medium"),
-    url('./assets/fonts/Inter/Inter-Medium.ttf') 
-}
-
-@font-face{
-    font-family: "InterMediumItalic";
-    src:local("Inter-MediumItalic"),
-    url('./assets/fonts/Inter/Inter-MediumItalic.ttf') 
-}
-
-
+*/
 
 
