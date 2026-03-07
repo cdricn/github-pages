@@ -1,10 +1,6 @@
 :root {
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
-  color-scheme: light dark;
-  color: var(--color-white);
-  background: var(--color-dark);
   scroll-behavior: smooth;
 
   font-synthesis: none;
@@ -13,20 +9,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-dark: #1C1C20;
-  --color-lightgray-100: #c7c7c7;
-  --color-lightgray-200: #b3b3b3;
-  --color-lightgray-300: #9b9b9b;
-  --color-gray: #bdbaba;
-  --color-gray-100: #5a5a5e;
-  --color-gray-200: #39393b;
-  --color-white: #ffffff;
-  --color-purple: #8C7BE9;
-  --color-cyan: #7BE2E9;
-  --color-deepblue: #206EB7; 
-  --color-red: #E97B7B;
-  --color-deepred:#DA5656;
-  --color-green: #81E97B;
-  --color-yellow: #E9E07B;
+  --color-light: #FFFCF8;
+  --color-placeholder: #ffffff;
 
   --color-html: #e76e3e;
   --color-js: #E9E07B;
@@ -34,16 +18,14 @@
   --color-ts: #206EB7;
   --color-nextjs: #FFFFFF;
   --color-react: #42dbf0;
-  
-  --color-lines: var(--color-white);
-
-  --color-navbar-text: var(--color-white);
 
   --fs-title: 4.5rem; /*72px*/
   --fs-text: 1rem; /*16px*/
   --fs-tags: .875rem; /*14px*/
   --fs-complementary: .75rem; /*12px*/
 
+  color-scheme: light dark;
+  background: var(--color-dark);
 }
 
 *, *::before, *::after {
@@ -63,6 +45,12 @@ body {
 
 h1, h2 {
   font-size: var(--fs-title);
+  line-height: 100%;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
   font-weight: 600;
 }
 
@@ -76,19 +64,17 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
-.section {
+section {
+  padding-block: 120px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  align-items: center;
   gap: 30px;
   width: 100%;
-  height: 100svh;
 }
 
 .content-wrapper {
   grid-column: 3/11;
-  padding-block: 120px;
   display: grid;
   grid-template-rows: auto;
 }
