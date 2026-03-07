@@ -1,8 +1,15 @@
+.grid {
+
+}
+
 .section-container {
   position: relative;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(12, 1fr);
+}
+
+.section-container > div {
 }
 
 .section-title {
@@ -42,6 +49,9 @@
   .section-title {
     grid-column: 1 / 13;
   }
+  .section-title > h2 {
+    font-size: var(--fs-section-title-1);
+  }
   .project-info {
     grid-column: 1 / 4;
   }
@@ -51,7 +61,7 @@
 }
 
 @media (width < 500px) {
-  .section-title > h1 {
+  .section-title > h2 {
     font-size: var(--fs-section-title);
   }
   .project-info {

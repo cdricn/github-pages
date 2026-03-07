@@ -1,7 +1,8 @@
-import styles from './project.module.css'
+import styles from './projects.module.css'
 import ProjectCard from './projectcard';
 import data from '../projects.json'
 import { ProjectEntry } from '../lib/interface';
+import GridTest from '../components/test/GridTest';
 
 export default function Project() {
 
@@ -23,7 +24,10 @@ export default function Project() {
   }
 
   return (
+    <>
+    <GridTest />
     <section className={styles['section']}>
+      <div className={styles['grid']}></div>
       <div className={styles['section-container']}>
         <div className={styles['section-title']}>
           <h2>Projects</h2>
@@ -44,5 +48,6 @@ export default function Project() {
         </div>
       </div>
     </section>
+    </>
   );
 }
