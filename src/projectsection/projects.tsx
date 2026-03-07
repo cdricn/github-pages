@@ -6,19 +6,37 @@ import GridTest from '../components/test/GridTest';
 
 export default function Project() {
 
+
+    
+  const styleCardsContainer = {
+    display: 'grid',
+    gridTemplateColumns: `repeat(${(data.main_projects.length * 3) + (data.main_projects.length - 1)}, 1fr)`,
+    gap: '30px'
+  }
+
+  const styleCardsGridStart = (index:number) => {
+    let colStart = (index*4)+1;
+    let colEnd = colStart+3;
+    return {
+      gridColumn: `${colStart}/${colEnd}`
+    }
+  }
+
   function mapItems(entries: ProjectEntry[]) {
     return entries.map((item, index)=>{
       return (
-        <ProjectCard
-          key = {index+item.title}
-          tags = {item.tags}
-          title = {item.title}
-          details = {item.details}
-          link = {item.link}
-          github_link = {item.github_link}
-          index = {index}
-          image = {item.image}
-        />
+        <div key={index+item.title}
+          style={styleCardsGridStart(index)}>
+            <ProjectCard
+              tags = {item.tags}
+              title = {item.title}
+              details = {item.details}
+              link = {item.link}
+              github_link = {item.github_link}
+              index = {index}
+              image = {item.image}
+            />
+        </div>
       )
     })
   }
@@ -26,26 +44,15 @@ export default function Project() {
   return (
     <>
     <GridTest />
-    <section className={styles['section']}>
-      <div className={styles['grid']}></div>
-      <div className={styles['section-container']}>
-        <div className={styles['section-title']}>
-          <h2>Projects</h2>
+    <section className={['section', styles['projects-section']].join(' ')}>
+      <div className='content-wrapper'>
+        <div className={['wrapper-grid', styles['section-header']].join(' ')}>
+          <h2>PROJECTS</h2>
+          <span>My web development projects.</span>
         </div>
-        <div className={styles['project-info']}>
-          <h3>Web development</h3>
-          <p>Projects about front-end web development.</p>
-        </div>
-        <div className={styles['project-entries']}>
-          {mapItems(data.main_projects)}
-        </div>
-        <div className={styles['project-info']}>
-          <h3>Miscellaneous</h3>
-          <p>Projects that I’ve created or participated in that are unrelated to web development.</p>
-        </div>
-        <div className={styles['project-entries']}>
-          {mapItems(data.misc_projects)}
-        </div>
+      </div>
+      <div className={styles['cards-container']} style={styleCardsContainer}>
+        {mapItems(data.main_projects)}
       </div>
     </section>
     </>
