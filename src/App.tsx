@@ -1,5 +1,5 @@
 import './fonts.css';
-import Project from './projectsection/project';
+import Projects from './projectsection/projects';
 import Cursor from './components/cursor/cursor';
 import Landing from './landing/landing';
 import Techstack from './components/techstack/techstack';
@@ -11,12 +11,12 @@ export default function App() {
   return (
     <>
       <GridTest />
-
-      <Navbar />
       <Cursor />
+      <Navbar />
+
       <Landing />
+      <Projects />
       <Techstack />
-      <Project />
     </>
   );
 }
